@@ -1,5 +1,5 @@
-<script src="https://maps.googleapis.com/maps/api/js?key="> <!--- gMaps API key HERE ----> 
-  </script>
+<script src="https://maps.googleapis.com/maps/api/js?key="> 
+  </script><!--- gMaps API key HERE ----> 
   <script type="text/javascript">
     $(function() {
       $('.zip-change').on('blur keyup', function() {
