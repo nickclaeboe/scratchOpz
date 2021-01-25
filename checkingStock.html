@@ -1,0 +1,84 @@
+Paste modal HTML immediately after the opening body tag, at the very top of the HTML for Subscribe. 
+
+Bootstrap CSS imported style sheet is required.
+
+
+<!-- Checking Modal -->
+<div id="pageModal" style="display: none;"><div id="pageWrap">
+	<div id="progressText_1" class="progressText" style="display: none;">Checking if you Qualify for Special Offers...</div>
+	<div id="progressText_2" class="progressText" style="display: none;">Congratulations You Qualified!</div>
+	<div id="progressText_3" class="progressText" style="display: none;">Checking for Stock...</div>
+	<div id="progressText_4" class="progressText" style="display: none;">Stock Available!</div>
+	<div class="meter">
+		<span style="width: 100%;"></span>
+	</div>
+</div> 
+</div>
+
+<script async="">
+        function queue(start) {
+            var rest = [].splice.call(arguments, 1),
+                promise = $.Deferred();
+
+            if (start) {
+                $.when(start()).then(function () {
+                    queue.apply(window, rest);
+                });
+            } else {
+                promise.resolve();
+            }
+            return promise;
+        }
+
+        var playSlideshow = function() {
+            queue(
+                function () {
+                    return $(".meter > span").animate({width: "7%"}, 2500);
+                },
+                function () {
+                    return $('#progressText_1').hide();
+                },
+                function () {
+                    return $('#progressText_2').show();
+                },
+                function () {
+                    return $(".meter > span").animate({width: "33%"}, 1250);
+                },
+                function () {
+                    return $('#progressText_2').delay(1250);
+                },
+                function () {
+                    return $('#progressText_2').hide();
+                },
+                function () {
+                    return $('#progressText_3').show();
+                },
+                function () {
+                    return $(".meter > span").animate({width: "66%"}, 1250);
+                },
+                function () {
+                    return $('#progressText_3').delay(1250);
+                },
+                function () {
+                    return $('#progressText_3').hide();
+                },
+                function () {
+                    return $('#progressText_4').show();
+                },
+                function () {
+                    return $(".meter > span").animate({width: "100%"}, 1250);
+                },
+                function () {
+                    return $('#progressText_4').delay(1250);
+                },
+                function () {
+                    return $('#pageModal').fadeOut(1000);
+                }
+
+	        );
+	};
+
+        $(function() {
+            playSlideshow();
+        });
+</script>
