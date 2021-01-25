@@ -1,0 +1,5 @@
+{{ moment 'today' 'dddd, MMMM Do, YYYY' }}
+
+{{ moment 'today' 'MMMM Do, YYYY' }}
+
+{{moment 'YYYY'}}
