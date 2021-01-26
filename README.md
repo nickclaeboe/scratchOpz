@@ -1,4 +1,4 @@
-# scratchOpz #
+# ScratchOpz #
 A full library & repository for the housing and collection of useful scripts found, written and/or customized to fit my daily use and needs.
 
 # Languages #
