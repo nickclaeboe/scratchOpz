@@ -7,8 +7,7 @@ A full library & repository for the housing and collection of useful scripts fou
 - jQUERY
 - PHP
 - JAVASCRIPT
-- jSON
-- ETC.
+- jSON 
 
 ### Contents ###
 Code, Snippets, Scripts and Helpers for daliy web development and use.
