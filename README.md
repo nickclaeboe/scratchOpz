@@ -2,8 +2,8 @@
 
 # Code, Snippets, Scripts and Helpers for daliy web development and use.
 
-# jQuery ## CSS ## PHP ## HTML ## Javascript 
-
+# HTML, CSS, jQUERY, PHP, JAVASCRIPT, jSON, ETC.
+Various codes and snippets for use
 
 ### CONTENTS ###
 
