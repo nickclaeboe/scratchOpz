@@ -1,8 +1,4 @@
-# scratchOpz
-## README ## 
-
-
-# scratchOpz
+# scratchOpz 
 
 # Code, Snippets, Scripts and Helpers for daliy web development and use.
 
