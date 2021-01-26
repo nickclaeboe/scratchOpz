@@ -1,11 +1,11 @@
 # scratchOpz 
+A full library & repository for the housing and collection of useful scripts found, written and/or customized to fit my daily use and needs.
 
-# Code, Snippets, Scripts and Helpers for daliy web development and use.
+# Languages #
+HTML, CSS, jQUERY, PHP, JAVASCRIPT, jSON, ETC.
 
-# HTML, CSS, jQUERY, PHP, JAVASCRIPT, jSON, ETC.
-Various codes and snippets for use
-
-### CONTENTS ###
+# CONTENTS #
+Code, Snippets, Scripts and Helpers for daliy web development and use.
 
 
 
