@@ -46,5 +46,5 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
   * OG Meta Tags
   * billShipSame html
 
-
-
+# Author #
+[NickClaeboe.com](https://www.nickclaeboe.com)
