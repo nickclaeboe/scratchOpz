@@ -47,4 +47,6 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
   * billShipSame html
 
 # Author #
-[NickClaeboe.com](https://www.nickclaeboe.com)
+Full Stack Project Manager
+Contact: [NickClaeboe.com](https://www.nickclaeboe.com)
+Social: [Twitter](https://twitter.com/nickclaeboe)
