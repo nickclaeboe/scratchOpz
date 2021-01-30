@@ -1,3 +1,5 @@
+## Dates using HandleBars.js ##
+
 {{ moment 'today' 'dddd, MMMM Do, YYYY' }}
 
 {{ moment 'today' 'MMMM Do, YYYY' }}
