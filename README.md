@@ -6,7 +6,7 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
 ---------- | ---------- | ---------- | ---------- | ---------- | ---------- 
 
 ## Contents ##
-Code, Snippets, Scripts and Helpers for daliy web development and use.
+> Code, Snippets, Scripts and Helpers for daliy web development and use.
 
 ### 1. **clickFunnelsHelpers** ###
   * clck to scroll
