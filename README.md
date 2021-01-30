@@ -7,25 +7,25 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
 ### Contents ###
 Code, Snippets, Scripts and Helpers for daliy web development and use.
 
-1. **clickFunnelsHelpers
+1. **clickFunnelsHelpers**
   * clck to scroll
   * date.js
   * random #'s   
-2. **css-styles
+2. **css-styles**
   * pulse  
-3. **cutomBoltOns
+3. **cutomBoltOns**
   * attention top JS
   * checking for stock
   * disable button checkbox
   * IG on any website
   * scroll to top with button hide 
   * socialProof widget - code & example  
-4. **geoStates
+4. **geoStates**
   * countries.json
   * UK, GB, IE html dropdown select code  
-5. **handleBar_js
+5. **handleBar_js**
   * moments  
-6. **javaScript-jQuery
+6. **javaScript-jQuery**
   * billShipSame.js
   * camp-info.js
   * dateScript.js
@@ -35,13 +35,13 @@ Code, Snippets, Scripts and Helpers for daliy web development and use.
   * owlCarouselEx.js
   * phone number masking
   * titleAlert.js  
-7. **phpHelpers
+7. **phpHelpers**
   * getBrowser.php
   * populateVars.php  
-8. **server-network
+8. **server-network**
   * optimize EC2
   * preVirtualHost.conf  
-9. **varHelpersTemplates
+9. **varHelpersTemplates**
   * OG Meta Tags
   * billShipSame html
 
