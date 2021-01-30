@@ -3,8 +3,9 @@ A full library & repository for the housing and collection of useful scripts fou
 
 ## Languages ##
 HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON 
+---------- | ---------- | ---------- | ---------- | ---------- | ---------- 
 
-### Contents ###
+## Contents ##
 Code, Snippets, Scripts and Helpers for daliy web development and use.
 
 ### 1. **clickFunnelsHelpers** ###
