@@ -8,9 +8,10 @@
 
 <!--/*
 
-After I implemented your solution for a video on my homepage, Google PageSpeed still indicated that the page load was blocking due to a third party script (youtube).
-So I wrapped the javascript code that adds the src parameter in a setTimeout() function. That worked, an Google PageSpeed is no longer complaining about third party scripts.
-Interestingly though, a timeout of 500ms didn’t work – I had to delay it for a full second.
+Google PageSpeed still indicated that the page load was blocking due to a third party script (youtube).
+We wrapped the javascript code that adds the src parameter in a setTimeout() function. 
+That worked, an Google PageSpeed is no longer complaining about third party scripts.
+Interestingly though, a timeout of 500ms didn’t work – we had to delay it for a full second.
 
 Loading the video immediately when the onload event is fired should be fine, since at that point the user sees the entire site.
 Maybe google still thinks it’s a problem because the page isn’t interactive until after the scripts are done running?
