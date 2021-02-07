@@ -48,6 +48,8 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
 ### 9. **varHelpersTemplates** ###
   * OG Meta Tags
   * billShipSame html
+### 10. **Wordpress** ####
+  * Settings CF7
 
 # Author #
 > Full Stack Project Manager
