@@ -7,7 +7,7 @@
   <div id="i45z03" class="custom-social-proof">
   <div class="custom-notification">
     <div class="custom-notification-container">
-      <div class="custom-notification-image-wrapper"><img src="https://cdn.subscribefunnels.com/ad7b7df4-a28a-4204-9ce6-7bf6b65c2a88/Xketo.png" /></div>
+      <div class="custom-notification-image-wrapper"><img src="#yourProductImagehere.png" /></div>
       <div class="custom-notification-content-wrapper">
         <p class="custom-notification-content"><span id="notify-customer">Mateo J</span>. - <span id="notify-state">ID</span><br />
           Purchased <strong><span id="notify-quantity">5</span></strong> Bottle<span id="notify-multiple">s</span> of {{bandName}}<br /><small><span id="notify-ago">47 minutes ago</span></small></p>
