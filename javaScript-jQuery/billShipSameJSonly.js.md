@@ -1,3 +1,4 @@
+```
 <script>
       const form = document.getElementById('order_form');
       const checkbox = form.querySelector('input[name="billShipSame"]');
@@ -11,3 +12,4 @@
         }
       })
 </script>
+```
