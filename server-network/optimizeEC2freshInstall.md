@@ -1,14 +1,15 @@
-Optimizing EC2 Instance - Fresh Install
-
-Edit: 
+# Optimizing EC2 Instance - Fresh Install
+httpd.conf path: 
+```
 /opt/bitnami/apache2/conf/httpd.conf
+```
 
-=== Leverage Browser Cacheing
+## Leverage Browser Cacheing
 
 Uncomment " LoadModule expires_module modules/mod_expires.so " on line 112 of httpd.conf
 
 Place below code  at the bottom just above the bitnami includes.
-
+```
 ## GZIP COMPRESSION ##
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
@@ -19,7 +20,8 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 Header append Vary User-Agent env=!dont-vary
 ## GZIP COMPRESSION ##
-	
+	```
+	```
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -42,15 +44,14 @@ ExpiresByType application/x-font-woff "access plus 1 year"
 ExpiresByType image/svg+xml "access plus 1 year"
 </IfModule>
 ## EXPIRES CACHING ##
-
+```
+```
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
-
-
+```
+```
 ################# test this shit ##########################
-
-
 <IfModule mod_mime.c>
     AddType text/css .css
     AddType application/x-javascript .js
@@ -154,7 +155,8 @@ Header set Cache-Control "max-age=31536000, public"
     Header unset Set-Cookie
 </FilesMatch>
 
-
+```
+```
 ###################### Git Hub Master httpd.conf #####################################
 
 # ----------------------------------------------------------------------
@@ -513,3 +515,4 @@ ServerTokens Prod
 		</FilesMatch>
 	</IfModule>
 </IfModule>
+```
