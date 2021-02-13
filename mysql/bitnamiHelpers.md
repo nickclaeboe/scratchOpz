@@ -6,7 +6,7 @@
 # Useful Links
 
 Connect to phpMyAdmin locally to edit sql tables
-* [Documentation](https://docs.bitnami.com/virtual-machine/faq/get-started/access-phpmyadmin/)
+* [DOCUMENTATION](https://docs.bitnami.com/virtual-machine/faq/get-started/access-phpmyadmin/)
 * http://127.0.0.1:8888/phpmyadmin/ 
 
 ```
@@ -16,7 +16,7 @@ Connect to phpMyAdmin locally to edit sql tables
 ```
 
 Purge Binary Logs
-* [Documentation](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
+* [DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
 * Disable Bin logs
 * my.cnf
 
@@ -27,3 +27,10 @@ Restart MySQL Service via CMD line.
 ```
 sudo /opt/bitnami/ctlscript.sh restart mysql
 ```
+
+# User Documented Fix
+### Optimize Table in phpmyadmin
+```
+phpMyAdmin > wp_options > Operations > Analyze Table
+```
+[SOURCE](https://pixl.my/fixed-wp_options-table-is-huge-for-no-reason/)
