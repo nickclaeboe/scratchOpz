@@ -1,9 +1,7 @@
 # Running Out of Diskspace 
-
+### Wordpress Bitnami AWS EC2 LINUX/UNIX Server running Apache2
 - unable to write files
 - bloated wp_options table 
-
-### Wordpress Bitnami AWS EC2 LINUX/UNIX Server running Apache2
 
 # Useful Links
 
