@@ -15,10 +15,15 @@ Connect to phpMyAdmin locally to edit sql tables
 - Destination: localhost:80
 ```
 
-Purge Binary Logs
-* [DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
-* Disable Bin logs
-* my.cnf
+# Purge Binary Logs
+[DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
+### additions to my.cnf
+
+```
+my.cnf
+Disable Bin logs
+expire_logs_days = 7
+```
 
 # Useful CMD's
 
