@@ -5,10 +5,10 @@
 
 # Connect to phpMyAdmin locally to edit sql tables
 
-``` https://docs.bitnami.com/virtual-machine/faq/get-started/access-phpmyadmin/
+[docs] https://docs.bitnami.com/virtual-machine/faq/get-started/access-phpmyadmin/
 
 http://127.0.0.1:8888/phpmyadmin/ 
 
 Disable Bin logs
 my.cnf
-```
+
