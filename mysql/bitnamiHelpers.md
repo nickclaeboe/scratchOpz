@@ -9,6 +9,12 @@ Connect to phpMyAdmin locally to edit sql tables
 * [Documentation](https://docs.bitnami.com/virtual-machine/faq/get-started/access-phpmyadmin/)
 * http://127.0.0.1:8888/phpmyadmin/ 
 
+```
+- In the “Connection -> SSH -> Tunnels” section, add a new forwarded port by introducing the following values:
+- Source port: 8888
+- Destination: localhost:80
+```
+
 Purge Binary Logs
 * [Documentation](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
 * Disable Bin logs
