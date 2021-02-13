@@ -1,5 +1,7 @@
+# Countries & States jSon List 
 
-
+### Countries 
+```
 "countries": {
         "US": "United States",
         "CA": "Canada",
@@ -7,7 +9,11 @@
         "IE": "Ireland",
         "NZ": "New Zealand"
     },
-    "states": {
+```
+
+## States by Country 
+### Canada
+```
         "CA": {
             "AB": "Alberta",
             "BC": "British Columbia",
@@ -23,6 +29,10 @@
             "SK": "Saskatchewan",
             "YT": "Yukon"
         },
+```
+
+### New Zealand
+```
         "NZ": {
             "AUK": "Auckland",
             "BOP": "Bay of Plenty",
@@ -44,6 +54,10 @@
             "WGN": "Wellington",
             "WTC": "West Coast"
         },
+```
+
+### Australia
+```
         "AU": {
             "ACT": "Australian Capital Territory",
             "NSW": "New South Wales",
@@ -54,6 +68,10 @@
             "VIC": "Victoria",
             "WA": "Western Australia"
         },
+```
+
+### Ireland
+```
         "IE": {
             "CW": "Carlow",
             "CN": "Cavan",
@@ -82,6 +100,10 @@
             "WX": "Wexford",
             "WW": "Wicklow"
         },
+```
+
+### United States
+```
         "US": {
             "AL": "Alabama",
             "AK": "Alaska",
@@ -146,3 +168,4 @@
             "AP": "Armed Forces Pacific"
         }
     },
+```
