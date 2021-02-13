@@ -14,6 +14,7 @@ Connect to phpMyAdmin locally to edit sql tables
 - Source port: 8888
 - Destination: localhost:80
 ```
+* [BITNAMI FORUM POST](https://community.bitnami.com/t/something-taking-up-space-and-growing/64532)
 
 # Purge Binary Logs
 [DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
