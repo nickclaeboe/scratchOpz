@@ -1,6 +1,10 @@
+## preVirtualHost.conf
 
+```
 SSLUseStapling off
+```
 
+```
 <IfModule mod_deflate.c>
 	# Insert filter
 	SetOutputFilter DEFLATE
@@ -23,6 +27,9 @@ SSLUseStapling off
 		Header append Vary User-Agent env=!dont-vary
 	</IfModule>
 </IfModule>
+```
+
+```
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -45,7 +52,12 @@ ExpiresByType application/x-font-woff "access plus 1 year"
 ExpiresByType image/svg+xml "access plus 1 year"
 </IfModule>
 ## EXPIRES CACHING ##
+```
 
+```
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
+```
+
+
