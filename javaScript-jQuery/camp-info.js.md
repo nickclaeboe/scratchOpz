@@ -1,3 +1,4 @@
+```
 function setCampInfo(el) {
   
   if (el.value == 'FR' || el.value == 'CH' || el.value == 'DE' || el.value == 'IT' || el.value == 'FI' || el.value == 'NL' || el.value == 'ES' || el.value == 'SE' || el.value == 'BE' || el.value == 'SW' || el.value == 'NO' || el.value == 'DK') {
@@ -14,7 +15,9 @@ function setCampInfo(el) {
    document.getElementById('fullpartialform').setAttribute('data-gjs-sf-campaign-id', 6);
 }
 };
+```
 
+```
 function setCampMobileInfo(el) {
   
   if (el.value == 'FR' || el.value == 'CH' || el.value == 'DE' || el.value == 'IT' || el.value == 'FI' || el.value == 'NL' || el.value == 'ES' || el.value == 'SE' || el.value == 'BE' || el.value == 'SW' || el.value == 'NO' || el.value == 'DK') {
@@ -31,3 +34,4 @@ function setCampMobileInfo(el) {
    document.getElementById('order-form').setAttribute('data-gjs-sf-campaign-id', 6);
 }
 };
+```
