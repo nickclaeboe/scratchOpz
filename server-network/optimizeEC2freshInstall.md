@@ -6,7 +6,9 @@ httpd.conf path:
 
 ## Leverage Browser Cacheing
 
+```
 Uncomment " LoadModule expires_module modules/mod_expires.so " on line 112 of httpd.conf
+```
 
 Place below code  at the bottom just above the bitnami includes.
 ```
@@ -20,8 +22,9 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 Header append Vary User-Agent env=!dont-vary
 ## GZIP COMPRESSION ##  
+```
 
-
+```
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
