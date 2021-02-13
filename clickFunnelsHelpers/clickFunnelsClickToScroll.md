@@ -8,6 +8,8 @@
 1. [Link 1](http://www.clipular.com/posts/6365662327603200?k=cr8iM0JSFNkBz23Kwtt97GoofIg)
 1. [Link 2](http://www.clipular.com/posts/4676484187553792?k=6dG2B_V5tdqUUHE5Kf5gkOkTOXs)
  
+ 
+### jQuery Code Snippet
 ```
 <script>
 
@@ -26,6 +28,8 @@ $(".nav3").bind('click',function(e){
 	
 </script>
 ```
+
+### Font Awesome Include
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 ```
