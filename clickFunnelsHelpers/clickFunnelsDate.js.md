@@ -1,3 +1,7 @@
+# ClickFunnels Date Generator Script
+## [ClickFunnels.com](https://mloaf-app.clickfunnels.com/users/sign_in)
+### ClickFunnels Page Builder
+```
 <script>
 (function(){'use strict';function y(a,b){for(var c in a)if(A(a,c)&&!1===b.call(a,a[c],c,a))break}function Qa(a){function b(a,b,c){t(d,a,function(a,e,f){a=za(a,e,f);vb(d,a.methods,b,c,a.v);return d})}var c="Object"===a,d=Ra(a,!0);b("defineStatic",1);b("defineInstance",2);b("defineInstanceAndStatic",3);b("defineStaticWithArguments",1,!0);b("defineInstanceWithArguments",2,!0);t(d,"defineStaticPolyfill",function(b,c,k){b=za(b,c,k);na(Y[a],b.methods,!0,b.v);return d});t(d,"defineInstancePolyfill",function(b,c,k){b=
 za(b,c,k);na(Y[a].prototype,b.methods,!0,b.v);y(b.methods,function(a,b){oa(d,b,a)});return d});t(d,"alias",function(a,b){var c=d,e="string"===typeof b?d[b]:b;c[a]=e;e.instance&&oa(c,a,e.instance,!0);return d});t(d,"extend",function(b){function e(a,c){var d=b[a];if(d)for(var e=0,f;f=d[e];e++)if(f===c)return!0;return!1}function k(a,c){return b[a]&&!e(a,c)}function l(a,c,d){if(!c[a]||!d)return!1;for(a=0;a<d.length;a++)if(!1===b[d[a]])return!0}var g=Y[a],p=g.prototype,v={},E={};b=b||{};var u=b.methods;
@@ -92,3 +96,4 @@ jQuery(document).ready(function($){
     }
 });
 </script>
+```
