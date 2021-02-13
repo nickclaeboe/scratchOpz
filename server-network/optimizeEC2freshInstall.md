@@ -19,10 +19,9 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 Header append Vary User-Agent env=!dont-vary
-## GZIP COMPRESSION ##
-	```
-	
-	```
+## GZIP COMPRESSION ##  
+
+
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
