@@ -1,9 +1,9 @@
  
+# SOCIAL PROOF WIDGET / PLUGIN jQuery Javascript 
+## FOMO Popup Widget Snippet
   
-  <!---------------------- SOCIAL PROOF WIDGET / PLUGIN jQuery Javascript ----------------->
-  
-  
-  
+### HTML Code Snippet
+```
   <div id="i45z03" class="custom-social-proof">
   <div class="custom-notification">
     <div class="custom-notification-container">
@@ -16,9 +16,10 @@
     <div class="custom-close"></div>
   </div>
 </div>
+```
 
-
-  
+### Javascript Code Snippet
+```
   <script type="text/javascript">
 
 // ------------------------------ Social Proof Notifications
@@ -91,4 +92,5 @@ $(document).ready(function () {
 
 });
 </script>
-    
+```
+
