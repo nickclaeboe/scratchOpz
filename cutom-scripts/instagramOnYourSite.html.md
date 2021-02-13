@@ -1,6 +1,14 @@
+# Integrate Instagram on your site, social feed import
+
+### HTML 
+```
 <div id="insta-feed"> 
   <div style="clear:both;"></div>
 </div>
+```
+
+# jQuery 
+```
 <script>
 var request = new XMLHttpRequest();
 			request.open('GET', 'https://api.instagram.com/v1/users/self/media/recent/?access_token=2979835415.a17b856.d0fcc4b02ba74dfbaf9899559987b1d7&count=8', true);
@@ -28,6 +36,10 @@ var request = new XMLHttpRequest();
 			};
 			request.send();  
 </script>
+```
+
+# CSS
+```
 <style>
 div#insta-feed {
     width: 100%;
@@ -80,4 +92,4 @@ div#insta-feed2 {
     max-height: 50%;
 }
 }</style>
-<div style="clear:both;"></div>
+``` 
