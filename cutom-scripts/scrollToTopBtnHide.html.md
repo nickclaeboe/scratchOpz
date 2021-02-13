@@ -27,7 +27,7 @@
 ```
 
 # HTML Snippet uses fontawesome.com icon
-``
+```
 <a href="#" class="goToTop"><i class="fas fa-arrow-up"></i></a>
 <!----- don't forget to include font awesome library somehow: https://fontawesome.com -->
 <script type="text/javascript"> 
