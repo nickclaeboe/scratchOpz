@@ -28,6 +28,12 @@ Restart MySQL Service via CMD line.
 sudo /opt/bitnami/ctlscript.sh restart mysql
 ```
 
+Sorting Disk Usage
+
+```
+du -hs /opt/bitnami/*/*/* | sort -rh | head -5
+```
+
 # User Documented Fix
 ### Optimize Table in phpmyadmin
 ```
