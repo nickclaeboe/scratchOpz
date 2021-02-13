@@ -1,3 +1,7 @@
+# BillShipSame Radio Button Hide Div Script
+
+### HTML Code Snippet
+```
 <div class="terms kform_checkbox">
     <div class="question">
         Billing same as shipping
@@ -28,6 +32,10 @@
 
     </div>
 </div>
+```
+
+### jQuery Code Snippet
+```
 <script>
     $(document).ready(function() {
         var MainForm = '#order_form'; 
@@ -41,3 +49,4 @@
         }).trigger('change');
     });
 </script> 
+```
