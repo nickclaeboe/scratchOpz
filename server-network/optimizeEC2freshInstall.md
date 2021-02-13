@@ -5,9 +5,9 @@ httpd.conf path:
 ```
 
 ## Leverage Browser Cacheing
-
+> Uncomment 
 ```
-Uncomment " LoadModule expires_module modules/mod_expires.so " on line 112 of httpd.conf
+" LoadModule expires_module modules/mod_expires.so " on line 112 of httpd.conf
 ```
 
 Place below code  at the bottom just above the bitnami includes.
