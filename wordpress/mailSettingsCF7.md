@@ -1,5 +1,6 @@
-# MAIL #
+# MAIL 
 
+```
 TO: 
 email@gmail.com
 
@@ -33,9 +34,10 @@ Comments:
 
 --
 This e-mail was sent from a contact form on N77 Design. (nickclaeboe.com)
+```
 
 # MAIL 2 #
-
+```
 TO: 
 
 [your-email]
@@ -70,3 +72,4 @@ Comments:
 
 --
 This e-mail was sent from a contact form on N77 Design. (nickclaeboe.com)
+```
