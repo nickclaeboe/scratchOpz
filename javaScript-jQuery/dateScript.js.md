@@ -1,3 +1,4 @@
+```
 <script language="Javascript">
 <!-- 
 
@@ -17,10 +18,10 @@ now.getDate() + ", " + now.getFullYear());
 
 // -->
 </script>
+```
 
-
-scrit with days added			
-
+## scrit with days added			
+``
 <script language="Javascript">
 <!-- 
 
@@ -41,13 +42,13 @@ monthNames[now.getMonth()] + " " +
 // -->
 </script>
 
-
+``
 
 RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
 RewriteRule ^(.*)$ https://www.yourdomain.com/$1 [L]
 
-/////////// best date script 				
-
+### best date script 				
+```
 <script type="text/javascript">
 function getDate(days) {  
 var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");    
@@ -58,16 +59,14 @@ var nowString =   monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.
 document.write(nowString);   
 }   
 </script>
+```
 
-
-
+```
 <script type="text/javascript">getDate(0)</script>
+```
 
-////////////// get month 
-
-
-get month
-
+### get month  
+```
 <script type="text/javascript">var monthNames = ["January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November", "December"
 ];
@@ -75,10 +74,10 @@ get month
 var d = new Date();
 document.write("" + monthNames[d.getMonth()]);</script>
 
+```
 
-
-/////// countdown timer 5 minutes
-
+### countdown timer 5 minutes
+```
 <script>
 function startTimer(duration, display) {
 var timer = duration,
@@ -104,10 +103,12 @@ display = document.querySelector('#time');
 startTimer(fiveMinutes, display);
 };
 </script>
+```
 
-
+```
 <div id="viewing">
 <img class="eye" alt="eye" src="assets/img/eye.png">
 <p>13 others are viewing this offer right now - <span id="time">0:00</span>
 </p>
 </div>
+```
