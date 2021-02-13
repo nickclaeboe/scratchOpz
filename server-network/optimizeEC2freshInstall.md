@@ -21,6 +21,7 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 Header append Vary User-Agent env=!dont-vary
 ## GZIP COMPRESSION ##
 	```
+	
 	```
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
@@ -45,11 +46,13 @@ ExpiresByType image/svg+xml "access plus 1 year"
 </IfModule>
 ## EXPIRES CACHING ##
 ```
+
 ```
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
 Header set Cache-Control "max-age=31536000, public"
 </filesMatch>
 ```
+
 ```
 ################# test this shit ##########################
 <IfModule mod_mime.c>
@@ -154,8 +157,8 @@ Header set Cache-Control "max-age=31536000, public"
     Header unset Cookie
     Header unset Set-Cookie
 </FilesMatch>
-
 ```
+
 ```
 ###################### Git Hub Master httpd.conf #####################################
 
