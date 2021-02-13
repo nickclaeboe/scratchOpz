@@ -21,7 +21,7 @@ now.getDate() + ", " + now.getFullYear());
 ```
 
 ## scrit with days added			
-``
+```
 <script language="Javascript">
 <!-- 
 
@@ -42,7 +42,7 @@ monthNames[now.getMonth()] + " " +
 // -->
 </script>
 
-``
+```
 
 RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
 RewriteRule ^(.*)$ https://www.yourdomain.com/$1 [L]
