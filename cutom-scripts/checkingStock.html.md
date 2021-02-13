@@ -1,8 +1,10 @@
-Paste modal HTML immediately after the opening body tag, at the very top of the HTML for Subscribe. 
+# Checking For Stock Modal Script
+### Note
+- Paste modal HTML immediately after the opening body tag, at the very top of the HTML. 
+- Bootstrap CSS imported style sheet is required.
 
-Bootstrap CSS imported style sheet is required.
-
-
+### HMTL Code Snippet
+```
 <!-- Checking Modal -->
 <div id="pageModal" style="display: none;"><div id="pageWrap">
 	<div id="progressText_1" class="progressText" style="display: none;">Checking if you Qualify for Special Offers...</div>
@@ -14,7 +16,10 @@ Bootstrap CSS imported style sheet is required.
 	</div>
 </div> 
 </div>
+```
 
+### Javascript Code Snippet
+```
 <script async="">
         function queue(start) {
             var rest = [].splice.call(arguments, 1),
@@ -82,7 +87,10 @@ Bootstrap CSS imported style sheet is required.
             playSlideshow();
         });
 </script>
+```
 
+### CSS Include
+```
 <style>
 	@charset "UTF-8";
 
@@ -269,3 +277,4 @@ pre {
 
 }
 </style>
+```
