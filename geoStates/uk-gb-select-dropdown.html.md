@@ -1,6 +1,7 @@
+# ALL GB / UK / IE STATES / PROVINCES / COUNTIES
 
-
-<!------------ / ALL GB / UK / IE STATES / PROVINCES / COUNTIES ------------> 
+### Input Select Dropdown Options
+```
 <input type="hidden" name="country" value="GB" />
 <select name="state" id="state" class="form-control" required="">
    <option selected="selected">Select County</option>
@@ -249,3 +250,4 @@
    <option value="YOR">York</option>
 </select>
 
+```
