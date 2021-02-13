@@ -12,3 +12,6 @@ http://127.0.0.1:8888/phpmyadmin/
 Disable Bin logs
 my.cnf
 
+```
+sudo /opt/bitnami/ctlscript.sh restart mysql
+```
