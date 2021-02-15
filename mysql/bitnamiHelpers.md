@@ -21,7 +21,7 @@ Connect to phpMyAdmin locally to edit sql tables
 ### additions to my.cnf
 ``` 
 Disable Bin logs
-expire_logs_days = 7
+expire_logs_days = 7 | binlog_expire_logs_seconds=604800
 ```
 
 # Useful CMD's
