@@ -1,5 +1,5 @@
 # Back Button Redirect Script
-### We the visitor clicks their browser 'BACK' button, we redirect them to a new offer/affiliate link
+### When our visitor clicks the browser 'BACK' button, they are redirected to a new, different affiliate URL
 
 ```
 <script>
