@@ -20,7 +20,7 @@ Connect to phpMyAdmin locally to edit sql tables
 [DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
 ### additions to my.cnf
 2 Snippets to append to the [mysqld] section of your my.cnf
--bitnami addressed the binlog issue with their new builds/packages
+* bitnami addressed the binlog issue with their newer AMI's
 ``` 
 expire_logs_days = 7
 ```
