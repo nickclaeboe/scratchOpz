@@ -1,5 +1,11 @@
 # Google Maps Api jQuery 
 
+### HTML Inputs 
+- add id #fields_city
+- add id #fields_state
+- add class .zip-change
+
+
 ### call to API key
 ```
 <script src="https://maps.googleapis.com/maps/api/js?key="></script>
