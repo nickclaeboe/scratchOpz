@@ -97,3 +97,29 @@ jQuery(document).ready(function($){
 });
 </script>
 ```
+### put this / these tokens to echo dynamic date
+```
+[#today]
+[#next week]
+[#the tuesday] or any day
+[#next week thursday]
+[#the end of february]
+[#two weeks from today]
+[#the end of next week]
+[#next saturday]
+[#four days after monday]
+
+```
+
+### Format	Sample output
+TOKEN | OUTPUT
+---------- | ----------
+{MM}/{dd}/{yyyy} | 11/30/2017
+{dd}/{MM}/{yyyy} | 30/11/2017
+{medium} | November 30, 2017
+ 
+ 
+```
+ [#today:{medium}],
+ ```
+
