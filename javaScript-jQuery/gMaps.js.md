@@ -6,8 +6,7 @@
 ```
 
 ```
-<select name="state" id="fields_state">
-</select>
+<select name="state" id="fields_state"></select>
 ```
 
 ```
