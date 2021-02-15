@@ -19,11 +19,16 @@ Connect to phpMyAdmin locally to edit sql tables
 # Purge Binary Logs
 [DOCUMENTATION](https://dev.mysql.com/doc/refman/5.6/en/purge-binary-logs.html)
 ### additions to my.cnf
+2 Snippets to append to the [mysqld] section of your my.cnf
+-bitnami addressed the binlog issue with their new builds/packages
 ``` 
-Disable Bin logs
-expire_logs_days = 7 | binlog_expire_logs_seconds=604800
+expire_logs_days = 7
 ```
-
+or
+```
+binlog_expire_logs_seconds=604800
+```
+both snippets are essentially the same thing, the latter of the 2 above is the newest included in the new bitnami aws ec2 wordpress AMI's
 # Useful CMD's
 
 Restart MySQL Service via CMD line.
