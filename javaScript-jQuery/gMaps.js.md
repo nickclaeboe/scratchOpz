@@ -1,10 +1,18 @@
 # Google Maps Api jQuery 
 
 ### HTML Inputs 
-- add id #fields_city
-- add id #fields_state
-- add class .zip-change
+```
+<input type="text" name="city" id="fields_city" />
+```
 
+```
+<select name="state" id="fields_state">
+</select>
+```
+
+```
+<input type="tel" name="zip" class="zip-change" />
+```
 
 ### call to API key
 ```
