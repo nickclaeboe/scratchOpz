@@ -9,7 +9,9 @@ Removes all but config files.
 sudo apt-get purge nginx nginx-common
 ```
 Removes everything.
+
+
+After using any of the above commands, use this in order to remove dependencies used by nginx which are no longer required.
 ```
 sudo apt-get autoremove
 ```
-After using any of the above commands, use this in order to remove dependencies used by nginx which are no longer required.
