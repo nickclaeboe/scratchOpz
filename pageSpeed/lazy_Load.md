@@ -10,15 +10,6 @@ To defer the load, put the image URL in an attribute other than src. Let’s say
 ```
 Next, use the following JS to trigger the `data-src` to load the deferred images
 ```
-
-
-    HTML CSS JS 
-
-    Result
-    Skip Results Iframe
-
-EDIT ON
-
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");    
   var lazyloadThrottleTimeout;
@@ -79,8 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 ## javaScript
 ```
-
-
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;    
 
@@ -129,6 +118,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", lazyload);
   }
 })
-
-
 ```
