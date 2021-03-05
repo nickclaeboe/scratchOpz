@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
-# Lazy Load CSS Background Images
-## HTML 
+## Lazy Load CSS Background Images
+### HTML 
 ```
 <div id="bg-image" class="lazy"></div>
 ``` 
-## CSS
+### CSS
 ```
 * {
   font-family: sans-serif;
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
   height: 400px;
 }
 ```
-## javaScript
+### javaScript
 ```
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;    
