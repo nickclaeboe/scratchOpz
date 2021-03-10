@@ -1,6 +1,4 @@
-## Decline link is used when a customer enters credit card information and their card is declined. Then they are redirected.
-
-```
+ 
 {{#if sf-error-message}}
   <script>
     if (document.querySelector('.gjs-frame') == null) {
@@ -9,5 +7,4 @@
       //console.log('hello');
     }
   </script>
-{{/if}}
-```
+{{/if}} 
