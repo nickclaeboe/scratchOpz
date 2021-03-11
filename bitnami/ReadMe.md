@@ -30,7 +30,7 @@ Restart the Web server
 ```
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
-
+> Reference/Documentation [Start or stop services](https://docs.bitnami.com/aws/how-to/bitnami-remove-banner/)
 ### Start or stop services
 > Each Bitnami stack includes a control script that lets you easily stop, start and restart services.
 - Obtain the status of a service:
@@ -53,3 +53,4 @@ sudo /opt/bitnami/ctlscript.sh stop
 ```
 sudo /opt/bitnami/ctlscript.sh restart
 ```
+> Reference/Documentation [Start or stop services](https://docs.bitnami.com/aws/faq/administration/control-services/)
