@@ -1,5 +1,6 @@
 # Affiliate Tool Box
 Tricks & Affiliate Helpers & Scripts 
+----------
 ## Back Button Redirect Script
 ### When our visitor clicks the browser 'BACK' button, they are redirected to a new, different affiliate URL
 
