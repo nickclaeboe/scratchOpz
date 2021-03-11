@@ -2,6 +2,8 @@
 
 ## 1. Attention jQuery script at the top of the page 
 
+- [code Snippets/Example](https://github.com/nickclaeboe/scratchOpz/blob/main/cutom-scripts/attentionTop.html.md)
+
 ## 2. 
 
 ## 3. 
