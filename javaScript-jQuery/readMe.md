@@ -11,7 +11,7 @@
 ### Document Ready Shorthand Starter Template `FIRE FIRST/IMMEDIATELY`
 ```
 <script type="text/javascript">
-  $(document).ready(function() {
+  $(document).ready(() => {
     
   });
 </script>
