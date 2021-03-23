@@ -166,3 +166,56 @@ The following snippets are provided to give quick access to standard form elemen
 
 ```
 
+# Resources
+
+Card Month
+
+```
+::Card Month
+01::01
+02::02
+03::03
+04::04
+05::05
+06::06
+07::07
+08::08
+09::09
+10::10
+11::11
+12::12
+```
+
+Card Month
+
+```
+::Card Month 
+01::01 January
+02::02 February
+03::03 March
+04::04 April
+05::05 May
+06::06 June
+07::07 July
+08::08 August
+09::09 September
+10::10 October
+11::11 November
+12::12 December
+```
+
+Card Year
+
+```
+::Card Year 
+2021::2021
+2022::2022
+2023::2023
+2024::2024
+2025::2025
+2026::2026
+2027::2027
+2028::2028
+2029::2029
+2030::2030
+```
