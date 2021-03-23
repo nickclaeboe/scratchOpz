@@ -163,7 +163,55 @@ The following snippets are provided to give quick access to standard form elemen
 ## Import Order Form
 
 ```
-
+<form id="order_form" method="POST" action="">
+   <div class="row innerFormWrap text-center"> 
+      <div class="col col-12">
+         <div class="form-group"><input type="tel" placeholder="Credit Card Number" name="cardNumber" id="creditCard" onkeyup="this.value=this.value.replace(/[^\d]/,'')" maxlength="16" required="" class="form-control"/><input type="tel" placeholder="CVV" name="cardSecurityCode" id="creditCard-2" onkeyup="this.value=this.value.replace(/[^\d]/,'')" maxlength="4" required="" class="form-control"/></div>
+         <div class="clearfix"></div>
+      </div>
+      <div class="col col-12">
+         <div class="row">
+            <div class="col">
+               <div class="form-group">
+                  <select name="cardMonth" required="" class="form-control">
+                     <option value="">Card Month</option>
+                     <option value="01">01 January</option>
+                     <option value="02">02 February</option>
+                     <option value="03">03 March</option>
+                     <option value="04">04 April</option>
+                     <option value="05">05 May</option>
+                     <option value="06">06 June</option>
+                     <option value="07">07 July</option>
+                     <option value="08">08 August</option>
+                     <option value="09">09 September</option>
+                     <option value="10">10 October</option>
+                     <option value="11">11 November</option>
+                     <option value="12">12 December</option>
+                  </select>
+               </div>
+            </div>
+            <div class="col">
+               <div class="form-group">
+                  <select name="cardYear" required="" class="form-control">
+                     <option value="">Card Year</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                     <option value="2028">2028</option>
+                     <option value="2029">2029</option>
+                     <option value="2030">2030</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="submitWrap text-center"><input type="submit" value="NEXT" class="btn btn-primary checkBtn"/></div>
+</form>
 ```
 
 # Resources
@@ -171,7 +219,7 @@ The following snippets are provided to give quick access to standard form elemen
 Card Month
 
 ```
-::Card Month
+   ::Card Month
 01::01
 02::02
 03::03
@@ -189,7 +237,7 @@ Card Month
 Card Month
 
 ```
-::Card Month 
+   ::Card Month 
 01::01 January
 02::02 February
 03::03 March
@@ -207,7 +255,7 @@ Card Month
 Card Year
 
 ```
-::Card Year 
+   ::Card Year 
 2021::2021
 2022::2022
 2023::2023
