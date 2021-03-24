@@ -1,5 +1,5 @@
 # Bitnami 
-### Create an SSL certificate for Apache
+## Create an SSL certificate for Apache
 - Generate a new private key:
 ```
 sudo openssl genrsa -out /opt/bitnami/apache2/conf/server.key 2048
@@ -13,7 +13,7 @@ sudo openssl req -new -key /opt/bitnami/apache2/conf/server.key -out /opt/bitnam
 sudo openssl x509 -in /opt/bitnami/apache2/conf/cert.csr -out /opt/bitnami/apache2/conf/server.crt -req -signkey /opt/bitnami/apache2/conf/server.key -days 365
 ```
 
-### Remove Bitnami Banner 
+## Remove Bitnami Banner 
 > Lower Right Page Peel Banner Removal CLI code
 To remove the banner link to the Bitnami Info page, follow these steps:
 
@@ -31,7 +31,7 @@ Restart the Web server
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
 > Reference/Documentation [Start or stop services](https://docs.bitnami.com/aws/how-to/bitnami-remove-banner/)
-### Start or stop services
+## Start or stop services
 > Each Bitnami stack includes a control script that lets you easily stop, start and restart services.
 - Obtain the status of a service:
 ```
