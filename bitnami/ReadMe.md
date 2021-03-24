@@ -1,4 +1,7 @@
 # Bitnami 
+
+The following is a list of snippets and commands for daily use with AWS Lamp Bitnmai EC2 Deployable AMI`amazon machine image`
+
 ## Create an SSL certificate for Apache
 - Generate a new private key:
 ```
