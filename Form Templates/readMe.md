@@ -219,7 +219,7 @@ The following snippets are provided to give quick access to standard form elemen
 Card Month
 
 ```
-   ::Card Month
+  ::Card Month
 01::01
 02::02
 03::03
@@ -237,7 +237,7 @@ Card Month
 Card Month
 
 ```
-   ::Card Month 
+  ::Card Month 
 01::01 January
 02::02 February
 03::03 March
@@ -255,7 +255,7 @@ Card Month
 Card Year
 
 ```
-   ::Card Year 
+    ::Card Year 
 2021::2021
 2022::2022
 2023::2023
