@@ -1,4 +1,4 @@
-<form id="order_form" method="POST" action="">
+<form id="order_form" method="" action="">
    <div class="form-group"><label for="firstName">First Name</label><input type="text" name="firstName" id="fName" required="" class="form-control"/></div>
    <div class="form-group"><label for="lastName">Last Name</label><input type="text" name="lastName" id="lName" required="" class="form-control"/></div>
    <div class="form-group"><label for="address1">Street Address</label><input type="text" name="address1" id="address1" required="" class="form-control"/></div>
