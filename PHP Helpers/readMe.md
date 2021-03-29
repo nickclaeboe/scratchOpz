@@ -13,7 +13,7 @@
   }
 ?>
 ```
-## pull multiple vars and string to link in same snippet/block
+## Pull multiple vars and string to link in same snippet/block
 ```
 <?php
 if(isset($_GET)){
@@ -26,7 +26,7 @@ if(isset($_GET)){
 $offerLink = 'https://AFFILIATELINKHERE.com/index.php?affId=8B31D2AA&c1='.$c1.'&c2='.$c2.'&c3='.$c3.'&c4='.$c4.'&c5='.$c5; 
 ?>
 ```
-## split fullName into firstName / lastName
+## Split fullName into firstName / lastName
 ```
 <?php
   session_start();
