@@ -17,3 +17,12 @@
 </script>
 ```
  
+### check this checkbox, unCheck all other checkboxes
+```
+<script>
+  $('input.example').on('change', function() {
+    $('input.example').not(this).prop('checked', false);  
+  });
+</script>
+```
+ 
