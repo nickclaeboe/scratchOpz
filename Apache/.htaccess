@@ -1,0 +1,195 @@
+####################
+# GZIP COMPRESSION #
+####################
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+Header append Vary User-Agent env=!dont-vary
+
+# BEGIN EXPIRES
+    ExpiresActive On
+    ExpiresDefault "access plus 10 days"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/plain "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-icon "access plus 1 year"
+# END EXPIRES
+ 
+# BEGIN Security
+Options -Indexes
+
+Order allow,deny
+Allow from all
+
+<files .htaccess>
+Order allow,deny
+Deny from all
+</files>
+
+# END Security
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+
+AddType application/xhtml+xml .xhtml
+
+
+##### start browser caching #####
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/x-javascript .js
+    AddType text/x-component .htc
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg .svgz
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType video/webm .webm
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg .ogv
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/x-font-woff .woff
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+    AddType application/json .json
+</IfModule>
+
+<FilesMatch "\.(php|html|htm|xml|js|css|json)$">
+    FileETag None
+    BrowserMatch MSIE best-standards-support
+    AddDefaultCharset utf-8
+    AddLanguage en-US .html .htm .css .js
+
+    <IfModule mod_mime.c>
+        AddCharset utf-8 .php .html .xml .css .js .json
+    </IfModule>
+
+    <IfModule mod_headers.c>
+        Header unset ETag
+        Header unset Pragma
+        Header set X-UA-Compatible IE=8 env=best-standards-support
+        Header append Vary: Accept-Encoding
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+    FileETag None
+    AddDefaultCharset utf-8
+
+    <IfModule mod_headers.c>
+        Header unset ETag
+        Header unset Pragma
+        Header set Cache-Control "max-age=31536000, public, must-revalidate"
+        Header append Access-Control-Allow-Origin "http://cloudfront.net"
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+    FileETag None
+
+    <IfModule mod_headers.c>
+        Header unset ETag
+        Header unset Pragma
+        Header set Cache-Control "max-age=31536000, public, must-revalidate"
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(js|css|jpg|png|jpeg|gif|xml|json|txt|pdf|mov|avi|otf|woff|ico|swf)$">
+    RequestHeader unset Cookie
+    Header unset Cookie
+    Header unset Set-Cookie
+</FilesMatch>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    ExpiresDefault "access plus 1 year"
+
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+
+    ExpiresByType audio/ogg "access plus 1 year"
+    ExpiresByType video/ogg "access plus 1 year"
+    ExpiresByType video/mp4 "access plus 1 year"
+    ExpiresByType video/webm "access plus 1 year"
+
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType text/x-javascript "access plus 1 year"
+
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/rss+xml "access plus 1 year"
+    ExpiresByType application/atom+xml "access plus 1 year"
+    ExpiresByType application/pdf "access plus 1 year"
+    ExpiresByType application/x-shockwave-flash "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+
+    ExpiresByType font/opentype "access plus 1 year"
+
+    ExpiresByType application/json "access plus 1 year"
+</IfModule>
+##### end browser caching #####
+
+
+###### keep alive ########
+
+<ifModule mod_headers.c>
+Header set Connection keep-alive
+</ifModule>
