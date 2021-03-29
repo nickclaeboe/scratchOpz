@@ -17,7 +17,7 @@
 </script>
 ```
  
-### check this checkbox, unCheck all other checkboxes
+### Check this checkbox, unCheck all other checkboxes
 ```
 <script>
   $('input.example').on('change', function() {
