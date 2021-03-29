@@ -1,4 +1,5 @@
-# JavaScript Main Scripts & Helpers
+# jQuery, Javascript 
+##  Scripts & Helpers
 
 ### Document Ready Starter Template
 ```
@@ -16,12 +17,19 @@
   });
 </script>
 ```
- 
 ### Check this checkbox, unCheck all other checkboxes
 ```
 <script>
   $('input.example').on('change', function() {
     $('input.example').not(this).prop('checked', false);  
+  });
+</script>
+```
+### Scroll to anchor on next page - put this code on the page you're landing on
+```
+<script>
+  $('html,body').animate({
+    scrollTop: $(window.location.hash).offset().top
   });
 </script>
 ```
