@@ -1,4 +1,4 @@
-# Various Helpers & Scripts
+# Helper Templates
 
 ## Disable Alpha-Numerics on <input type="tel"/>
 ### use the onkeyup function below 
