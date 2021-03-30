@@ -267,3 +267,13 @@ Card Year
 2029::2029
 2030::2030
 ```
+
+## Add Class / Remove Class on INPUTS onFocus
+
+```
+$('input').focus(function () {
+    $(this).parent().addClass('red');
+}).blur(function () {
+    $(this).parent().removeClass('red');
+});
+```
