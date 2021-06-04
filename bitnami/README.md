@@ -63,10 +63,10 @@ sudo /opt/bitnami/ctlscript.sh restart
 `Address already in use: make_sock: could not bind to address 0.0.0.0:80`
 ### Issue
 `Make sure you are not declaring Listen 80 twice in .conf files.`
-Run this shell cmd to find running apache processes
+- Run this shell cmd to find running apache processes
 ```
 netstat -ltnp | grep :80
 ```
-the run 
-`sudo kill -9 1047`
-where Where 1047 is the pid of the program running on port 80.You can replace the pid that you obtained from `netstat`
+- then run 
+```sudo kill -9 1047```
+- Where `1047` is the pid of the program running on port `80`. You can replace the pid that you obtained from `netstat`
