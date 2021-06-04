@@ -72,3 +72,11 @@ netstat -ltnp | grep :80
 sudo kill -9 1047
 ```
 - Where `1047` is the pid of the program running on port `80`. You can replace the pid that you obtained from `netstat`
+
+### Notes to address MYSQL not starting after above it addressed
+```
+In the same directory, you'll find binlog.index file.
+windows: C:\Program Files\MySQL\MySQL Server X.0\data\binlog.index
+Linux: /var/lib/mysql/binlog.index
+Remove entry of './binlog.000007' and restart the server..
+```
