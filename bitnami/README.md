@@ -68,5 +68,7 @@ sudo /opt/bitnami/ctlscript.sh restart
 netstat -ltnp | grep :80
 ```
 - then run 
-```sudo kill -9 1047```
+```
+sudo kill -9 1047
+```
 - Where `1047` is the pid of the program running on port `80`. You can replace the pid that you obtained from `netstat`
