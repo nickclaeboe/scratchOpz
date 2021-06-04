@@ -57,3 +57,7 @@ sudo /opt/bitnami/ctlscript.sh stop
 sudo /opt/bitnami/ctlscript.sh restart
 ```
 > Reference/Documentation [Start or stop services](https://docs.bitnami.com/aws/faq/administration/control-services/)
+
+## Apache fails to start, Address already in use (but not really)
+### Error 
+`Address already in use: make_sock: could not bind to address 0.0.0.0:80`
