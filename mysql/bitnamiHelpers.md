@@ -16,7 +16,7 @@ Connect to phpMyAdmin locally to edit sql tables
 ```
 * [BITNAMI FORUM POST](https://community.bitnami.com/t/something-taking-up-space-and-growing/64532)
 
-> if debugging and can't delete files off server
+> ## if debugging and can't delete files off server
 
 If you’re trying to delete a very large number of files at one time (I deleted a directory with 485,000+ today), you will probably run into this error:
 
