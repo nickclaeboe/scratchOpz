@@ -16,39 +16,39 @@ Connect to phpMyAdmin locally to edit sql tables
 ```
 * [BITNAMI FORUM POST](https://community.bitnami.com/t/something-taking-up-space-and-growing/64532)
 
-> ## if debugging and can't delete files off server
+# if debugging and can't delete files off server
 
-If you’re trying to delete a very large number of files at one time (I deleted a directory with 485,000+ today), you will probably run into this error:
+- If you’re trying to delete a very large number of files at one time (I deleted a directory with 485,000+ today), you will probably run into this error:
 
 ```
 /bin/rm: Argument list too long.
 ```
 
-The problem is that when you type something like rm -rf *, the * is replaced with a list of every matching file, like “rm -rf file1 file2 file3 file4” and so on. There is a relatively small buffer of memory allocated to storing this list of arguments and if it is filled up, the shell will not execute the program.
+- The problem is that when you type something like rm -rf *, the * is replaced with a list of every matching file, like “rm -rf file1 file2 file3 file4” and so on. There is a relatively small buffer of memory allocated to storing this list of arguments and if it is filled up, the shell will not execute the program.
 
-To get around this problem, a lot of people will use the find command to find every file and pass them one-by-one to the “rm” command like this:
+- To get around this problem, a lot of people will use the find command to find every file and pass them one-by-one to the “rm” command like this:
 
 ```
 find . -type f -exec rm -v {} \;
 ```
 
-My problem is that I needed to delete 500,000 files and it was taking way too long.
+- My problem is that I needed to delete 500,000 files and it was taking way too long.
 
-I stumbled upon a much faster way of deleting files – the “find” command has a “-delete” flag built right in! Here’s what I ended up using:
+- I stumbled upon a much faster way of deleting files – the “find” command has a “-delete” flag built right in! Here’s what I ended up using:
 
 ```
 find . -type f -delete
 ```
 
-Using this method, I was deleting files at a rate of about 2000 files/second – much faster!
+- Using this method, I was deleting files at a rate of about 2000 files/second – much faster!
 
-You can also show the filenames as you’re deleting them:
+- You can also show the filenames as you’re deleting them:
 
 ```
 find . -type f -print -delete
 ```
 
-…or even show how many files will be deleted, then time how long it takes to delete them:
+- …or even show how many files will be deleted, then time how long it takes to delete them:
 
 ```
 root@devel# ls -1 | wc -l && time find . -type f -delete
