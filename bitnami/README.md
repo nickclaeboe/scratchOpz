@@ -80,3 +80,13 @@ windows: C:\Program Files\MySQL\MySQL Server X.0\data\binlog.index
 Linux: /var/lib/mysql/binlog.index
 Remove entry of './binlog.000007' and restart the server..
 ```
+
+# Helpful CMD's
+
+```
+du -hs /opt/bitnami/*/*/* | sort -rh | head -5
+```
+
+```
+find . -type f -print -delete
+```
