@@ -82,11 +82,12 @@ Remove entry of './binlog.000007' and restart the server..
 ```
 
 # Helpful CMD's
-
+List diskspace and sort top 5 results
 ```
 du -hs /opt/bitnami/*/*/* | sort -rh | head -5
 ```
 
+Delete files from folder and print/show results as cmd runs
 ```
 find . -type f -print -delete
 ```
