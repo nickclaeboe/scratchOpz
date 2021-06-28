@@ -39,7 +39,7 @@
         $('.checkCongrat, .checkQual').show();
       }, 4000);
       setTimeout(function() {
-        window.location.href = "checkout{{queryParams}}";
+        window.location.href = "checkout";
       }, 4500);
       return false;
     });
