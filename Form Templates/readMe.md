@@ -277,3 +277,89 @@ $('input').focus(function () {
     $(this).parent().removeClass('red');
 });
 ```
+# Direct to Checkout `shipping info`
+
+```
+  <div id="shipAddress" class="d-none">
+              <div id="ikiq7e">Enter your shipping information</div>
+              <div class="fields"><label>
+                  First Name:
+                </label><input value="" type="text" name="firstName" data-group="1" placeholder="First Name" required="" data-field="first_name" class="form-control" /> </div>
+              <div class="fields"><label>
+                  Last Name:
+                </label><input value="" type="text" name="lastName" data-group="1" placeholder="Last Name" required="" data-field="last_name" class="form-control" /> </div>
+              
+              <div class="fields"><label>
+                  Zip:
+                </label><input value="" type="tel" name="zip" data-group="1" placeholder="Zip / Postal" required="" data-field="zip" class="form-control" onkeyup="this.value=this.value.replace(/[^\d]/,'')" /> </div>
+              <div class="fields"><label>
+                  Address:
+                </label><input value="" type="text" name="address1" data-group="1" placeholder="Address" required="" data-field="address" class="form-control" /> </div>
+              <div class="fields"><label>
+                  Address 2:
+                </label><input value="" type="text" name="address2" data-group="1" placeholder="Apt / Suite #" data-field="address_2" class="form-control" /> </div>
+              <div class="fields"><label>
+                  City:
+                </label><input value="" type="text" name="city" data-group="1" placeholder="City" required="" data-field="city" class="form-control" /></div>
+              <div class="fields"><label>
+                  State:
+                </label><select name="state" required="" data-field="state" data-group="1" id="state" data-default="" class="form-control">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Lousiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                  <option value="DC">Washington, DC</option>
+                </select> </div>
+              <div class="fields"><label>
+                  Email:
+                </label><input value="" type="email" name="email" data-group="1" placeholder="Email Address" required="" data-field="email" class="form-control" /> </div>
+              <div class="fields"><label>
+                  Phone:
+                </label><input value="" type="tel" name="phone" data-group="1" placeholder="Phone Number" required="" data-field="phone" class="form-control" onkeyup="this.value=this.value.replace(/[^\d]/,'')" /> </div>
+            </div> -->
+```
+
