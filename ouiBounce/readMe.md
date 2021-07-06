@@ -9,23 +9,22 @@
   });
 </script>
 ``` 
-<!---------------- modal exit pop ouibounce ------------>
-<!-- Add the OuiBounce CSS & Font -->
+- modal exit pop ouibounce
+- Add the OuiBounce CSS & Font
 
 ```
 <link rel="stylesheet" href="css/ouibounce.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
 ```
 
-<!-- Load jQuery -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+- Load jQuery
+``` <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> ```
 
 ```
 <script src="js/ouibounce.js"></script>
 ```
 
-															
-<!-- OuiBounce Modal -->
+- OuiBounce Modal -->
 ```
 <div id="ouibounce-modal">
 <div class="underlay"></div>
@@ -38,8 +37,8 @@
 </div>
 </div>
 ```
-<!-- Example page JS        -->
-<!-- Used to fire the modal -->
+- Example page JS        -->
+- Used to fire the modal -->
 
 ```
 <script>
