@@ -7,7 +7,7 @@ HTML | CSS | jQUERY | PHP | JAVASCRIPT | jSON
 
 ## Use ##
 
-
+> Daily coding, deving, scripting and debugging. 
 
 # Author #
 > Full Stack Project Manager
