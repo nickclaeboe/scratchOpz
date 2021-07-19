@@ -1,5 +1,5 @@
 https://ketofuelenhanced.com/v1/mobile/qualify.php?#
-
+```
 <?php
 if(isset($_GET)){
 	$path = http_build_query($_GET);
@@ -7,6 +7,7 @@ if(isset($_GET)){
 };
 include('echo.php');
 ?>
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,9 +31,7 @@ include('echo.php');
 <link rel="stylesheet" href="assets/index1/css/fLoader.css" media="all">
 <!-- <link rel="stylesheet" href="assets/index1/css/icons.css" media="all"> -->
 </head>
-<body class="fi-2s quiz" style="">
-
- 
+<body class="fi-2s quiz" style=""> 
   <!----- Quiz ----->
 <!--   <div id="fakeLoader"></div> -->
   <div class="lander pb-3 quizBkgrd changBkgrd">
