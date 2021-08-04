@@ -277,6 +277,14 @@ $('input').focus(function () {
     $(this).parent().removeClass('red');
 });
 ```
+
+### active class
+```
+ .active{
+    box-shadow: 0 4px 0px -1px #4cdbd9 !important;
+}
+```
+
 # Direct to Checkout `shipping info`
 
 ```
