@@ -1,4 +1,5 @@
-```<VirtualHost *:80>
+```
+<VirtualHost *:80>
     ServerName funnelopz.com
     ServerAlias www.funnelopz.com
     DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
