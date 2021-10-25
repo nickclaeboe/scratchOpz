@@ -1,11 +1,13 @@
-<VirtualHost *:80>
+```<VirtualHost *:80>
     ServerName funnelopz.com
     ServerAlias www.funnelopz.com
     DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
     
     Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
 </VirtualHost>
+```
 
+```
 <VirtualHost *:443>
     ServerName funnelopz.com
     ServerAlias www.funnelopz.com
@@ -21,3 +23,4 @@
         SSLHonorCipherOrder on
     Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
 </VirtualHost>
+```
