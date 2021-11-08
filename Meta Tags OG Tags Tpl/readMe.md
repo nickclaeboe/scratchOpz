@@ -1,4 +1,4 @@
-Copied from http://code.lancepollard.com/complete-list-of-html-meta-tags/
+Copied from  https://gist.github.com/lancejpollard/1978404
 
 ## Basic HTML Meta Tags
 
