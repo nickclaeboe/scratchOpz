@@ -2,6 +2,8 @@ Copied from  https://gist.github.com/lancejpollard/1978404
 
 Twitter Open Graph Card Validator https://cards-dev.twitter.com/validator
 
+Open Graph Article/Blog Post Neil Patel https://neilpatel.com/blog/open-graph-meta-tags/
+
 ## Basic HTML Meta Tags
 
 ``` html
