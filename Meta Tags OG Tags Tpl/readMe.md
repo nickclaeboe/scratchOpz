@@ -1,5 +1,7 @@
 Copied from  https://gist.github.com/lancejpollard/1978404
 
+Twitter Open Graph Card Validator https://cards-dev.twitter.com/validator
+
 ## Basic HTML Meta Tags
 
 ``` html
