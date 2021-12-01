@@ -23,4 +23,4 @@
 - the src="https://www.yo..." to data-src="https://www.yo..."
 - Add a new src=""
 
-* What this does is basically turn off the loading of the iFrame until we tell it to do so (using Javascript). The script tells the browser to load the iFrame, so whenever the browser gets to loading the script, the (deferred) loading of the iFrame occurs after.
+## What this does is basically turn off the loading of the iFrame until we tell it to do so (using Javascript). The script tells the browser to load the iFrame, so whenever the browser gets to loading the script, the (deferred) loading of the iFrame occurs after.
