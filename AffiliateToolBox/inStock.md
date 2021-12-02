@@ -36,5 +36,74 @@
     </script>
 ```
 
+## Added CSS 
+
+```
+
+/******inStock******/
+.yellowText {
+  color: #ffb467;
+  font-weight: 300
+}
+
+.discount {
+  background-color: #c10700;
+  color: #fff;
+  position: absolute;
+  padding: 5px 15px;
+  z-index: 2;
+  letter-spacing: .75px;
+  border-radius: 20px;
+  top: 30px;
+  left: 5%;
+  font-size: .8125rem
+}
+
+.redText {
+  color: #b12704;
+  font-size: 1.875rem
+}
+
+@media (max-width:1200px) {
+  .redText {
+    font-size: -webkit-calc(1.3125rem + .75vw);
+    font-size: calc(1.3125rem + .75vw)
+  }
+}
+
+
+
+.greenText {
+  color: #00d981;
+  font-size: 1.875rem
+}
+
+@media (max-width:1200px) {
+  .greenText {
+    font-size: -webkit-calc(1.3125rem + .75vw);
+    font-size: calc(1.3125rem + .75vw)
+  }
+}
+
+.orangeText {
+  color: #fbd539;
+  font-size: 1.875rem
+}
+
+@media (max-width:1200px) {
+  .orangeText {
+    font-size: -webkit-calc(1.3125rem + .75vw);
+    font-size: calc(1.3125rem + .75vw)
+  }
+}
+
+@media (max-width:768px) {
+
+
+  .stock h3 {
+    margin-top: 0
+  }
+}
+```
 
               
