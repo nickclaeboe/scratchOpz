@@ -1,5 +1,7 @@
 ## In-Stock Script Snippet
 
+### Utilizes FontAwesome and Bootstrap
+
 ```
  <h3 class="greenText">
   <span class="amountInStock">
@@ -10,7 +12,8 @@
 
 
 ```
- $('.amountInStock').append(' 5');
+<script>
+     $('.amountInStock').append(' 5');
   setTimeout(function() {
     $('.amountInStock').empty();
     $('.amountInStock').append('<i class="fa fa-exclamation-circle"></i> 4');
@@ -29,6 +32,8 @@
     $('.stock h3').removeClass('orangeText').addClass("redText");
     $('.stock h3').addClass('bounce-top');
   }, 17000);
+
+    </script>
 ```
 
 
