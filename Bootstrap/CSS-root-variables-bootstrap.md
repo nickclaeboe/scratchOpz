@@ -1,5 +1,5 @@
+# Bootstrap CSS Variables 
 ## Given script uses handlebars.js to echo the CSS :root psuedo Bootstrap classes.
-
 
 ```
 <script>
@@ -25,13 +25,8 @@
   }
 </script>
 ```
-
 ## Base CSS and define :root vars 
-
-```
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
-
+``` 
 :root {
   --theme-color: #4e4e4e;
   --theme-tone: #fff;
