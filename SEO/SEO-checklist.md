@@ -1,12 +1,12 @@
 ## SEO Basics:
 
-> Set up GSC and Bing Webmaster Tools
-> Set up Google Analytics (GA)
-> Install and configure an SEO plugin (Wordpress)
-> Generate and submit a sitemap to GSC and Bing
-> Create a Robots.txt
-> Check Webmaster Tools for any manual actions
-> Make sure the site is indexed
+- Set up GSC and Bing Webmaster Tools
+- Set up Google Analytics (GA)
+- Install and configure an SEO plugin (Wordpress)
+- Generate and submit a sitemap to GSC and Bing
+- Create a Robots.txt
+- Check Webmaster Tools for any manual actions
+- Make sure the site is indexed
 
 ### Keyword Research:
 - Identify the competitors
