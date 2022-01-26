@@ -1,8 +1,8 @@
 # SendGrid Example.php Code Block 
-## https://github.com/sendgrid/sendgrid-php/blob/main/examples/helpers/mail/example.php
+## [Example.php Sauce](https://github.com/sendgrid/sendgrid-php/blob/main/examples/helpers/mail/example.php)
+> Use Cases Resource [GITHUB REPO](https://github.com/sendgrid/sendgrid-php/blob/main/USE_CASES.md)
 
-```
-<?php
+```<?php
 
 // Next line will load dependencies to run this example
 // Please refer to the README how to use in your project
