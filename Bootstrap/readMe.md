@@ -1,7 +1,8 @@
 # Root Switch 
 
 ### on page js
-```<script>
+```
+<script>
   var root = document.querySelector(':root');
   var mainBkgrd = ('{{themeBkgrdImg}}');
   var formBkgrd = ('{{themeFormBkgrd}}');
