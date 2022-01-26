@@ -1,4 +1,33 @@
- <div class="bd-content ps-lg-4">
+# Root Switch 
+
+### on page js
+```<script>
+  var root = document.querySelector(':root');
+  var mainBkgrd = ('{{themeBkgrdImg}}');
+  var formBkgrd = ('{{themeFormBkgrd}}');
+  root.style.setProperty('--theme-bkgrd-img', mainBkgrd);
+  root.style.setProperty('--theme-form-bkgrd', formBkgrd);
+</script>
+```
+
+### css update
+```:root {
+  --theme-bkgrd-img: url(https://s3.amazonaws.com/subscribe-funnels-production/assets/f1959432-e843-47dd-8e96-579586453eb3/placeHeroMain.jpg);
+  --theme-form-bkgrd: url(https://s3.amazonaws.com/subscribe-funnels-production/assets/040b8c62-e01f-44eb-b1c3-e40ebeb25307/ooni-bkgrd-m.jpg);
+}
+.lp-form{
+ background-image: var(--theme-form-bkgrd);
+}
+
+.background {
+  background-image: var(--theme-bkgrd-img);
+  background-size: cover; 
+  background-position:  center center;
+  background-repeat:  no-repeat;
+}
+```
+
+<div class="bd-content ps-lg-4">
         
 
         <h2 id="quick-start">Quick start<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#quick-start" style="padding-left: 0.375em;"></a></h2>
