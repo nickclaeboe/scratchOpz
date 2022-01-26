@@ -1,3 +1,7 @@
+# Notes 
+https://stackoverflow.com/questions/41886766/using-sendgrid-with-php-and-jquery-mobile
+[example to use](https://stackoverflow.com/questions/41886766/using-sendgrid-with-php-and-jquery-mobile)
+
 # SendGrid Example.php Code Block 
 ## [Example.php Sauce](https://github.com/sendgrid/sendgrid-php/blob/main/examples/helpers/mail/example.php)
 > Use Cases Resource [GITHUB REPO](https://github.com/sendgrid/sendgrid-php/blob/main/USE_CASES.md)
