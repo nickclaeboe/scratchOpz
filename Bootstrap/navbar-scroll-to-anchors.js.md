@@ -1,3 +1,5 @@
+
+<script>
 $(window).load(function(){ 
 	$(function() {
 		var navbarOffset = $(".navbar").height() + 10;
@@ -16,3 +18,4 @@ $(window).load(function(){
 		 });
 	});
 });  
+</script>
