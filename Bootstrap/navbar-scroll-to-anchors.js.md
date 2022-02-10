@@ -1,4 +1,4 @@
-
+```
 <script>
 $(window).load(function(){ 
 	$(function() {
@@ -19,3 +19,4 @@ $(window).load(function(){
 	});
 });  
 </script>
+```
