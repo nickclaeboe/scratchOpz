@@ -2,28 +2,26 @@
 <?php
 //session_start() 
 //if(isset($_POST['submit'])){
-	define("RECAPTCHA_V3_SECRET_KEY", '6LcuLmYeAAAAAHEYrNw0mpFP-JPRPgxKootNH-CV');
+	define("RECAPTCHA_V3_SECRET_KEY", 'KEYYYYHERE put the key here please');
 if(!empty($_POST['website'])) die();
 if(isset($_POST['email']) && $_POST['email']) {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 
 $name = $_POST['name']; 
-$email = $_POST['email'];
-//$email_to = $_POST['email'];
-// $email_to = "info@tandgonline.com,tngreservations@gmail.com,jaynecoffee@gmail.com";
-$email_to = "nickclaeboe@gmail.com";
+$email = $_POST['email']; 
+$email_to = "email@website.com"; 
 $phoneNumber = $_POST['phoneNumber'];
 $dateOfEvent = $_POST['dateOfEvent'];
 $noOfGuest = $_POST['noOfGuest'];
 $comments = $_POST['comments'];
-$email_subject = " Tongue & Groove VIP Request Information Bottle Service ";
-$headers = "From: TONGUEANDGROOVE <info@tandgonline.com>";
-$headers = "Reply-To: info@tandgonline.com" . "\n";
+$email_subject = " Website Form Submission ";
+$headers = "From: Website <email@website.com>";
+$headers = "Reply-To: email@website.com" . "\n";
 $message = "Name: ". $name . "\r\nEmail: " . $email . "\r\nPhone: " . $phoneNumber . "\r\nDate: " . $dateOfEvent . "\r\nGuests: " . $noOfGuest . "\r\nComments: " . $comments . "\n" . "\n";
-ini_set("SMTP", "gator3098.hostgator.com:2080");
-ini_set("sendmail_from", "info@tandgonline.com");
+ini_set("SMTP", "mail.website.com:2080");
+ini_set("sendmail_from", "email@website.com");
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $message, $headers," -finfo@tandgonline.com");
+mail($email_to, $email_subject, $message, $headers," -femail@website.com");
 $fp = fopen('emaillist.csv', 'a');
 fwrite($fp, $message);
 fclose($fp);
@@ -58,7 +56,7 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
 
 
 ```
- <script src="https://www.google.com/recaptcha/api.js?render=6LcuLmYeAAAAAHEYrNw0mpFP-JPRPgxKootNH-CV&trustedtypes=true"></script>
+ <script src="https://www.google.com/recaptcha/api.js?render=PUTAPIKEYHERE_PUTITHERE_HERE_&trustedtypes=true"></script>
   <script>
    function onSubmit(token) {
      document.getElementById("contactForm").submit();
