@@ -2,7 +2,7 @@ https://stackoverflow.com/questions/23006516/jquery-animated-number-counter-from
 
 ## keep a reference to it at the beginning of your function (wrapped in $thisin my example):
 
-### 
+
 ```
 $('.Count').each(function () {
   var $this = $(this);
@@ -14,8 +14,12 @@ $('.Count').each(function () {
     }
   });
 });
-Update: If you want to display decimal numbers, then instead of rounding the value with Math.ceil you can round up to 2 decimals for instance with value.toFixed(2):
 
+```
+
+###  Update: If you want to display decimal numbers, then instead of rounding the value with Math.ceil you can round up to 2 decimals for instance with value.toFixed(2):
+
+```
 step: function () {
   $this.text(this.Counter.toFixed(2));
 }
