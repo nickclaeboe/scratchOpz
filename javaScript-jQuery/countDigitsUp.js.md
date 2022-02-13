@@ -16,7 +16,7 @@ $('.Count').each(function () {
 
 ```
 
-###  Update: If you want to display decimal numbers, then instead of rounding the value with Math.ceil you can round up to 2 decimals for instance with value.toFixed(2):
+###  Update: If we  want to display decimal numbers, then instead of rounding the value with Math.ceil you can round up to 2 decimals for instance with value.toFixed(2):
 
 ```
 step: function () {
