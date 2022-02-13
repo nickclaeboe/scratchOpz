@@ -1,7 +1,6 @@
-https://stackoverflow.com/questions/23006516/jquery-animated-number-counter-from-zero-to-value#answer-23006629
+## Sauce [STACKOVERFLOW](https://stackoverflow.com/questions/23006516/jquery-animated-number-counter-from-zero-to-value#answer-23006629)
 
-## keep a reference to it at the beginning of your function (wrapped in $thisin my example):
-
+## Count Up From Zero with jQuery, very easy to applie to any element on the page 
 
 ```
 $('.Count').each(function () {
