@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+  <head>
+    <title>PageSpeed Insights API</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-URL: <input type="text" id="url" value="https://developers.google.com">
+URL: <input type="text" id="url" value="" placeholder="Test Your Site Now">
 
 <p>Click the button to fetch screenshot.</p>
 
@@ -23,19 +27,18 @@ function run() {
       // See https://developers.google.com/speed/docs/insights/v5/reference/pagespeedapi/runpagespeed#response
       // to learn more about each of the properties in the response object.
       showInitialContent(json.id);
-      const cruxMetrics = {
-        "First Contentful Paint": json.loadingExperience.metrics.FIRST_CONTENTFUL_PAINT_MS.category,
-        "First Input Delay": json.loadingExperience.metrics.FIRST_INPUT_DELAY_MS.category
-      };
-      showCruxContent(cruxMetrics);
+      // const cruxMetrics = {
+      //   "First Contentful Paint": json.loadingExperience.metrics.FIRST_CONTENTFUL_PAINT_MS.category,
+      //   "First Input Delay": json.loadingExperience.metrics.FIRST_INPUT_DELAY_MS.category
+      // };
+      // showCruxContent(cruxMetrics);
       const lighthouse = json.lighthouseResult;
       const lighthouseMetrics = {
         'First Contentful Paint': lighthouse.audits['first-contentful-paint'].displayValue,
         'Speed Index': lighthouse.audits['speed-index'].displayValue,
         'Time To Interactive': lighthouse.audits['interactive'].displayValue,
+        'Total Blocking Time': lighthouse.audits['total-blocking-time'].displayValue,
         'First Meaningful Paint': lighthouse.audits['first-meaningful-paint'].displayValue,
-        'First CPU Idle': lighthouse.audits['first-cpu-idle'].displayValue,
-        'Estimated Input Latency': lighthouse.audits['estimated-input-latency'].displayValue
       };
       showLighthouseContent(lighthouseMetrics);
       showImage(lighthouse.audits['final-screenshot']);
@@ -57,6 +60,7 @@ function setUpQuery(address) {
     query += `${key}=${parameters[key]}`;
     first = false;
   }
+  query += "&key=AIzaSyDrVLu5798-nx46rJ8-btmwCglt0pn5svA"
   return query;
 }
 
@@ -70,16 +74,16 @@ function showInitialContent(id) {
   document.getElementById("results").appendChild(page);
 }
 
-function showCruxContent(cruxMetrics) {
-  const cruxHeader = document.createElement('h2');
-  cruxHeader.textContent = "Chrome User Experience Report Results";
-  document.getElementById("results").appendChild(cruxHeader);
-  for (key in cruxMetrics) {
-    const p = document.createElement('p');
-    p.textContent = `${key}: ${cruxMetrics[key]}`;
-    document.getElementById("results").appendChild(p);
-  }
-}
+// function showCruxContent(cruxMetrics) {
+//   const cruxHeader = document.createElement('h2');
+//   cruxHeader.textContent = "Chrome User Experience Report Results";
+//   document.getElementById("results").appendChild(cruxHeader);
+//   for (key in cruxMetrics) {
+//     const p = document.createElement('p');
+//     p.textContent = `${key}: ${cruxMetrics[key]}`;
+//     document.getElementById("results").appendChild(p);
+//   }
+// }
 
 function showLighthouseContent(lighthouseMetrics) {
   const lighthouseHeader = document.createElement('h2');
