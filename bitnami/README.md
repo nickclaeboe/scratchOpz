@@ -91,3 +91,8 @@ Delete files from folder and print/show results as cmd runs
 ```
 find . -type f -print -delete
 ```
+
+### Password Protect Directories
+```
+https://docs.bitnami.com/aws/infrastructure/lamp/administration/use-htpasswd/
+```
