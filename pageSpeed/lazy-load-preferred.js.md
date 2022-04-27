@@ -1,5 +1,6 @@
 
 <script type="text/javascript" defer="">
+  ```
   /*! lozad.js - v1.5.0 */ ! function(t, e) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : t.lozad = e()
   }(this, function() {
@@ -63,8 +64,11 @@
       }
     }
   });
+                                                 ```
 </script>
 <script type="text/javascript" defer="">
+```
   window.lazyLoad = lozad('.lazy');
   window.lazyLoad.observe();
-</script>
+```
+  </script>
