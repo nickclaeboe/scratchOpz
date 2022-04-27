@@ -66,9 +66,8 @@
   });
                                                  
 </script>
-<script type="text/javascript" defer="">
- 
+
+<script type="text/javascript" defer=""> 
   window.lazyLoad = lozad('.lazy');
-  window.lazyLoad.observe();
- 
+  window.lazyLoad.observe(); 
   </script>
