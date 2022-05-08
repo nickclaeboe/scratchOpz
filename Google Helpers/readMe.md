@@ -87,7 +87,7 @@ $('#name, #phoneNumber, #email, #dateOfEvent, #noOfGuest, #comments').bind('keyu
         var email = $('#email').val();
   
         grecaptcha.ready(function() {
-            grecaptcha.execute('6LcuLmYeAAAAAHEYrNw0mpFP-JPRPgxKootNH-CV', {action: 'process.php'}).then(function(token) {
+            grecaptcha.execute('PUTAPIKEYHERE_PUTITHERE_HERE', {action: 'process.php'}).then(function(token) {
                 $('#contactForm').prepend('<input type="hidden" name="token" value="' + token + '">');
                 $('#contactForm').prepend('<input type="hidden" name="action" value="process.php">');
                 $('#contactForm').unbind('submit').submit();
