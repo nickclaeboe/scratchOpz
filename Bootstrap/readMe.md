@@ -13,8 +13,8 @@
 
 ### css update
 ```:root {
-  --theme-bkgrd-img: url(https://s3.amazonaws.com/subscribe-funnels-production/assets/f1959432-e843-47dd-8e96-579586453eb3/placeHeroMain.jpg);
-  --theme-form-bkgrd: url(https://s3.amazonaws.com/subscribe-funnels-production/assets/040b8c62-e01f-44eb-b1c3-e40ebeb25307/ooni-bkgrd-m.jpg);
+  --theme-bkgrd-img: url(placeholder.jpg);
+  --theme-form-bkgrd: url(placeholder.jpg);
 }
 .lp-form{
  background-image: var(--theme-form-bkgrd);
