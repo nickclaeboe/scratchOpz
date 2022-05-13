@@ -1,4 +1,4 @@
-```
+
 
 <script>
   var root = document.querySelector(':root');
@@ -71,4 +71,4 @@ prdsList = object either featuredProducts or gadgetProducts */
 
   createProducts(op, 'prd', 'product');
 </script>
-```
+
