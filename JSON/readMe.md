@@ -1,6 +1,6 @@
-
-
+```
 <script>
+```
   var root = document.querySelector(':root');
   var color = ('{{themeColor}}');
   var accent = ('{{themeAccent}}');
@@ -11,7 +11,9 @@
   root.style.setProperty('--theme-hero-img', heroImg);
   root.style.setProperty('--theme-color-a', rgba);
   const globalProductsToken = ('{{sf-global-products}}');
+  ```
 </script>
+```
 <script async="">
 /*  Global Products (all Products) */
 const globalProducts = GlobalProductData.filter((e) => {
