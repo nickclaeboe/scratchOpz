@@ -26,6 +26,7 @@ Splitting 01/23 into `hidden` cardMonth / cardYear inputs`the split`
 
 `format string`
 
+```
 <script>
 function formatString(e) {
     var inputChar = String.fromCharCode(event.keyCode);
@@ -52,3 +53,4 @@ function formatString(e) {
     );
   }
 </script>
+```
