@@ -1,5 +1,5 @@
-<!--------- disable right click, f12, ctrl U, view source etc.   --------------->
-
+### disable right click, f12, ctrl U, view source etc. 
+```
    <script>
       $(document).ready(function() {
         $('body').attr("oncontextmenu", "return false");
@@ -25,6 +25,4 @@
         }
       }
     </script>
-
-
-<!--------- /disable right click, f12, ctrl U, view source etc.   --------------->
+``` 
