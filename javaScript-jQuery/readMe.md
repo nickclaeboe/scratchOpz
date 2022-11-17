@@ -82,3 +82,5 @@
     $(this).find('.addToCart').addClass('d-none');
   }).mouseleave(); 
 ```
+
+http://jsfiddle.net/nuLubyut/ 
