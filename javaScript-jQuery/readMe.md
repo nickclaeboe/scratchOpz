@@ -71,4 +71,14 @@
 </script>
 
  ```
+ ### Correct way to add / remove class for .hover(); to execute properly 
  
+ ``` 
+  $('.prdWrap').mouseenter(function() {
+    $(this).find('.addToCart').removeClass('d-none');
+  });
+
+  $('.prdWrap').mouseleave(function() {
+    $(this).find('.addToCart').addClass('d-none');
+  }).mouseleave(); 
+```
