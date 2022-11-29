@@ -1,6 +1,6 @@
 [https://stackoverflow.com/questions/30855948/wow-js-is-not-working#answers-header]
  
-#WoW.js / Animate.css 
+# WoW.js / Animate.css 
 
 ```
 $(function(){
@@ -8,7 +8,7 @@ $(function(){
 });
 ```
  
-##Libraries included from cdn:
+## Libraries included from cdn:
 
 [https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css]
 [https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js]
