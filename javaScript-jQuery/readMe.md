@@ -9,6 +9,19 @@
   });
 </script>
 ```
+
+## set product id:
+
+```
+$('#order_form').attr('data-gjs-sf-product', SFprodID);
+```
+
+## get product ID:
+
+```
+var SFprodID = $('#order_form').attr('data-gjs-sf-product');
+```
+
 ### Document Ready Shorthand Starter Template `FIRE FIRST/IMMEDIATELY`
 ```
 <script type="text/javascript">
