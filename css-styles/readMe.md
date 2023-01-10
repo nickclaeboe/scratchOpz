@@ -14,4 +14,4 @@
 }
 ```
 
-https://animate.style/[https://animate.style/]
+https://animate.style/
