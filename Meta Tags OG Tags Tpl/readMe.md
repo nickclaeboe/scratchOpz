@@ -11,7 +11,7 @@ Open Graph Article/Blog Post Neil Patel https://neilpatel.com/blog/open-graph-me
 <meta name="description" content="150 words"/>
 <meta name="subject" content="your website's subject">
 <meta name="copyright"content="company name">
-<meta name="language" content="ES">
+<meta name="language" content="EN">
 <meta name="robots" content="index,follow" />
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
 <meta name="abstract" content="">
