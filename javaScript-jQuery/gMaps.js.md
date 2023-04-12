@@ -100,3 +100,97 @@
   </script>
 ```
 
+## Canadian Postal Codes Solution
+
+```
+
+<script src="https://maps.googleapis.com/maps/api/js?region=CA&components=country:CA&key={{gmaps-id}}&callback=Function.prototype"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.zip-change').on('blur keyup', function() {
+      var $this = $(this);
+      var val = $this.val();
+      if (val.match(/^[\w\d]{3}$/)) {
+        $this.val(val + ' ');
+      }
+
+      if ($this.val().length == 7) {
+        getAddressInfoByZip($this.val())
+      }
+    });
+  });
+
+  function onError() {
+    $('#fields_state').find($('#fields_state').val(''));
+    $('.zip-change').addClass('error').removeClass('valid');
+    $('#fields_city').val('');
+  }
+
+  function getAddressInfoByZip(zip) {
+    if (zip.length >= 4 && typeof google != 'undefined') {
+      var addr = {};
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({
+        'address': zip
+      }, function(results, status) {
+
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results.length >= 1) {
+            for (var ii = 0; ii < results[0].address_components.length; ii++) {
+              var street_number = route = street = city = state = zipcode = country = formatted_address = '';
+              var types = results[0].address_components[ii].types;
+              if (types.find(t => t == "street_number")) {
+                addr.street_number = results[0].address_components[ii].long_name;
+              } else if (types.find(t => t == "route" || t == "point_of_interest" || t == "establishment")) {
+                addr.route = results[0].address_components[ii].long_name;
+              } else if (
+                types.find(t => {
+                  return (
+                    t == 'sublocality' ||
+                    t == 'locality' ||
+                    t == 'neighborhood' ||
+                    t == 'administrative_area_level_3'
+                  );
+                })
+              ) {
+                addr.city = results[0].address_components[ii].long_name;
+              } else if (types.find(t => t == "administrative_area_level_1")) {
+                addr.state = results[0].address_components[ii].short_name;
+              } else if (types.find(t => t == "postal_code" || t == "postal_code_prefix")) {
+                addr.zipcode = results[0].address_components[ii].long_name;
+              } else if (types.find(t => t == "country")) {
+                addr.country = results[0].address_components[ii].long_name;
+              }
+            }
+            addr.success = true;
+            for (name in addr) {
+              console.log('{{gmaps-id}}' + name + ': ' + addr[name]);
+            }
+            if (addr.country == 'Canada') {
+              var state = addr.state;
+              var city = addr.city;
+              $('#fields_state').find($('#fields_state').val(state));
+              $('#fields_city').find($('#fields_city').val(city));
+              $('.zip-change').addClass('valid').removeClass('error');
+              return true;
+            } else {
+              onError();
+              return false;
+            }
+          } else {
+            onError();
+            return false;
+          }
+        } else {
+          onError();
+          return false;
+        }
+      });
+    } else {
+      return false;
+    }
+  }
+
+  function response(obj) {}
+</script> 
+```
