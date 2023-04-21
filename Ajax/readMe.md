@@ -4,7 +4,7 @@
 
 ### PHP
 ```
-<?php
+ 
   //if(isset($_POST['submit'])){
   if($_POST)
   {  
@@ -21,11 +21,11 @@
   } 
   else {}
   ;
-?>
+ 
 ```
 ### jQuery
 ```
-<script type="text/javascript">
+ 
   $(document).ready(function() {
     $( "#myform" ).on('submit',function (e) {
       e.preventDefault();
@@ -54,5 +54,5 @@
       return false;
     });
   });
-</script>
+ 
 ```
