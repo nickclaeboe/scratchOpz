@@ -1,10 +1,16 @@
+## HTML
+```
 <div id="exitOverlay" class="hidden exitpop"></div>
 <div id="exitPopup" class="hiddenn exitpop" style="display:none;">
     <a href="checkout.php?<?php echo $path; ?>" id="exitLink" title="Discount Shipping"><img src="assets/img/exitpop.png" alt="Discount Shipping" class="popupimg" height="424" width="852">
         <div class="exit-bottle"> <img class="exitbottle adjuster" src="assets/img/product1.png" alt=""> </div>
     </a>
 </div>
-
+<div class="clickMe"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+```
+## Javascript
+```
 <script type="text/javascript">
 	window.formSubmitted = false;
 	window.internalLink = false;
@@ -46,9 +52,14 @@
 		}
 	});
 </script>
-
-# CSS
-
+<script>
+  $(document).ready(() => {
+    $('.clickMe').click();
+  });
+</script>
+```
+## CSS
+```
 <style>
   .redbar {
     background-color: #d22;
@@ -248,3 +259,4 @@
 }
 
 </style>
+```
