@@ -195,6 +195,37 @@ Use custom meta tags to store data that you need in javascript, instead of hard-
 ## Other Resources
 
 - [Dublic Core Meta Tags](http://www.seoconsultants.com/meta-tags/dublin/)
+
+### How To View Youtube Thumbnail Image In High Resolution? 
+
+You can easily view (and download) the thumbnail of any YouTube video in high or default resolution by searching for the OG image tag in the HTML source page of the video.
+
+Before we get into the article, if you are into Video creation, be sure to check out Vidnami, and Flexclip.com which are our favorite video creation tools.
+
+Here are the steps to view thumbnail of any YouTube video:
+
+Method 1: Viewing The Thumbnail By Using The Video ID
+If the above method does not work, you can use this instead:
+
+Step 1: Copy the 11 character alphanumerical ID of the youtube video (that you wish to view the thumbnail for).
+
+For example, the ID of the following video is: 8hYlB38asDY
+```
+https://www.youtube.com/watch?v=8hYlB38asDY
+```
+Step 2: Paste the ID where it says ID in the following URLs:
+```
+https://i.ytimg.com/vi/ID/hqdefault.jpg
+https://i.ytimg.com/vi/ID/maxresdefault.jpg
+```
+For example:
+```
+https://i.ytimg.com/vi/8hYlB38asDY/hqdefault.jpg
+https://i.ytimg.com/vi/8hYlB38asDY/maxresdefault.jpg
+```
+Step 3: Open these URLs in your browser to see the thumbnail image. You can then download the thumbnail by right clicking and saving the image to your computer.
+
+IMPORTANT NOTE: Note that hqdefault.jpg will give you the standard definition image and maxresdefault.jpg will give max resolution image. Also note that not all videos will have max resolution images, but all will have standard definition images. If the video does not have a max resolution image, you will get a 404 error for the maxresdefault.jpg URL.
 - [Apple Meta Tags](http://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html)
 - [OpenGraph Meta Tags](http://opengraphprotocol.org/)
 - [Link Tag Meaning](http://intertwingly.net/wiki/pie/LinkTagMeaning)
