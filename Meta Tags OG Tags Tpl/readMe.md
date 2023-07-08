@@ -202,6 +202,7 @@ Use custom meta tags to store data that you need in javascript, instead of hard-
 
   
 ## How To View Youtube Thumbnail Image In High Resolution? 
+https://orbitingweb.com/blog/view-youtube-thumbnail-image/ 
 
 You can easily view (and download) the thumbnail of any YouTube video in high or default resolution by searching for the OG image tag in the HTML source page of the video.
 
