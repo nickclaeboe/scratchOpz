@@ -209,7 +209,7 @@ Before we get into the article, if you are into Video creation, be sure to check
 
 Here are the steps to view thumbnail of any YouTube video:
 
-**Method 1:** Viewing The Thumbnail By Using The Video ID
+### **Method 1:** Viewing The Thumbnail By Using The Video ID
 
 If the above method does not work, you can use this instead:
 
@@ -231,5 +231,5 @@ https://i.ytimg.com/vi/8hYlB38asDY/maxresdefault.jpg
 ```
 Step 3: Open these URLs in your browser to see the thumbnail image. You can then download the thumbnail by right clicking and saving the image to your computer.
 
-**IMPORTANT NOTE:** Note that hqdefault.jpg will give you the standard definition image and maxresdefault.jpg will give max resolution image. Also note that not all videos will have max resolution images, but all will have standard definition images. If the video does not have a max resolution image, you will get a 404 error for the maxresdefault.jpg URL.
+### **IMPORTANT NOTE:** Note that hqdefault.jpg will give you the standard definition image and maxresdefault.jpg will give max resolution image. Also note that not all videos will have max resolution images, but all will have standard definition images. If the video does not have a max resolution image, you will get a 404 error for the maxresdefault.jpg URL.
 
