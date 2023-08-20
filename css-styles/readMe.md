@@ -38,7 +38,7 @@ https://animate.style/
     transform: translateY(-5px);
 	transition: 0.2s linear;
 	
-	
+```	
 * { 
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -46,3 +46,4 @@ https://animate.style/
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out; 
 }
+```
