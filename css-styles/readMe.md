@@ -29,3 +29,20 @@ https://animate.style/
   transform: translate(-50%, -50%);
 }
 ```
+	/******** use below on nav's **** repeated elements *******************/
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	
+	/******** use below on HOVER btn , etc.. **** repeated elements *******************/
+	-webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+	transition: 0.2s linear;
+	
+	
+* { 
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out; 
+}
