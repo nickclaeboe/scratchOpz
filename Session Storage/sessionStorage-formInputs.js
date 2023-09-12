@@ -1,8 +1,7 @@
-# Get/Set SessionStorage Form Inputs, Cookie, Set Cookies, Checkout Form
+// Get/Set SessionStorage Form Inputs, Cookie, Set Cookies, Checkout Form
 
-### Use the following script to save lead form / checkout form data on submitForm, submit button click 
-
-```
+// Use the following script to save lead form / checkout form data on submitForm, submit button click 
+ 
 $('.btn-submit').click(function() {
     storedata();
   });
@@ -38,4 +37,4 @@ $('.btn-submit').click(function() {
     $('input[name=phone]').val(formStorage.storedValue7);
     $('input[name=email]').val(formStorage.storedValue8);
   }
-```
+ 
