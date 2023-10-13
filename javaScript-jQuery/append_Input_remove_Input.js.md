@@ -1,3 +1,4 @@
+```
 <script type="text/javascript">
 	$('.cross-sells-item__price-empty-checkmark').click(function(e) {
 		var ADDProdID = $(this).closest('.cross-sells-item').attr('data-plan-id');
@@ -14,6 +15,7 @@
 		}).remove();
 	});
 </script>
+```
 
-StackOverflow Helper: https://stackoverflow.com/questions/6732364/jquery-find-elements-with-value-x
+StackOverflow Helper: [https://stackoverflow.com/questions/6732364/jquery-find-elements-with-value-x]
 
