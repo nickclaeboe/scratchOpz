@@ -6,12 +6,15 @@ Many users run a Bitnami stack as a development environment for their own PHP pr
 Create the same structure used by Bitnami when installing Bitnami PHP applications. To do this, follow these steps:
 
 Run the following commands to create the directories and assign the necessary permissions.
+
 ```
 sudo mkdir /opt/bitnami/myapp
 sudo chown -R bitnami:daemon /opt/bitnami/myapp
 sudo chmod -R g+w /opt/bitnami/myapp
 ```
+
 Create and edit the /opt/bitnami/apache/conf/vhosts/myapp-vhost.conf file and add the configuration block shown below:
+
 ```
   <VirtualHost 127.0.0.1:80 _default_:80>
     ServerAlias *
@@ -23,9 +26,11 @@ Create and edit the /opt/bitnami/apache/conf/vhosts/myapp-vhost.conf file and ad
     </Directory>
   </VirtualHost>
 ```
+
 NOTE: If your application uses .htaccess files, you should change the AllowOverride None option to AllowOverride All. Find out how to move the .htaccess file content to the main server configuration file.
 
 Create and edit the /opt/bitnami/apache/conf/vhosts/myapp-https-vhost.conf file and add the configuration block shown below:
+
 ```
   <VirtualHost 127.0.0.1:443 _default_:443>
     ServerAlias *
@@ -40,6 +45,7 @@ Create and edit the /opt/bitnami/apache/conf/vhosts/myapp-https-vhost.conf file 
     </Directory>
   </VirtualHost>
 ```
+
 NOTE: If your application uses .htaccess files, you should change the AllowOverride None option to AllowOverride All. Find out how to move the .htaccess file content to the main server configuration file.
 
 Restart the Apache server:
