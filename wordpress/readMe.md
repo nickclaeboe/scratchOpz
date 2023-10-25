@@ -1,6 +1,6 @@
 # WordPress Helpers & Scripts
 
-Create A Custom PHP Application
+###Create A Custom PHP Application
 Many users run a Bitnami stack as a development environment for their own PHP projects (as opposed to running third-party applications such as Joomla! or WordPress). To deploy your PHP application in this environment, follow these steps.
 
 Create the same structure used by Bitnami when installing Bitnami PHP applications. To do this, follow these steps:
