@@ -1,4 +1,18 @@
-# WordPress Helpers & Scripts
+WordPress Helpers & Scripts
+
+## How to Install WordPress in a Subdirectory (Step by Step)
+
+https://www.wpbeginner.com/wp-tutorials/how-to-install-wordpress-in-a-subdirectory-step-by-step/
+
+## Access phpMyAdmin
+
+### Connect To PhpMyAdmin
+
+https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
+
+### The Ultimate Guide to WordPress Databases in 2022
+
+https://blog.hubspot.com/website/wordpress-database
 
 ## Create A Custom PHP Application
 
