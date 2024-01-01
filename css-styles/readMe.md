@@ -33,7 +33,78 @@ https://animate.style/
   filter: brightness(50%);
 }
 ```
+# Hover Effect, Darken Background
 
+```
+
+.profilepic {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.profilepic:hover .profilepic__content {
+  opacity: 1;
+}
+
+.profilepic:hover .profilepic__image {
+  opacity: .5;
+}
+
+.profilepic__image {
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.profilepic__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.profilepic__icon {
+  color: white;
+  padding-bottom: 8px;
+}
+
+.fas {
+  font-size: 20px;
+}
+
+.profilepic__text {
+  text-transform: uppercase;
+  font-size: 12px;
+  width: 50%;
+  text-align: center;
+}
+```
+
+```
+
+
+<div class="profilepic">
+  <img class="profilepic__image" src="https://images.unsplash.com/photo-1510227272981-87123e259b17?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=3759e09a5b9fbe53088b23c615b6312e" width="150" height="150" alt="Profibild" />
+  <div class="profilepic__content">
+    <span class="profilepic__icon"><i class="fas fa-camera"></i></span>
+    <span class="profilepic__text">Edit Profile</span>
+  </div>
+</div>
+```
+
+https://stackoverflow.com/questions/67104652/hover-effect-change-your-picture-with-icon-on-profile-picture#answer-67105931
 
 ## Absolute Centering with CSS
 ```
