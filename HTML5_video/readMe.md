@@ -1,6 +1,7 @@
 
-<!------------------- HTML5 video tag mute / autoplay ---------------->
+# HTML5 video tag mute / autoplay  
 
+```
 <script>
   $('.unMuteBtn').click(function() {
     var video = document.getElementById("video1");
@@ -13,6 +14,9 @@
     $('.bi-mic-mute-fill').hide('fast');
   });
 </script>
+```
+
+```
 <script>
   var myVideo = document.getElementById("video1");
 
@@ -37,3 +41,4 @@
 
   myVideo.play();
 </script>
+```
