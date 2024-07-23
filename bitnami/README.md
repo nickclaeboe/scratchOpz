@@ -16,6 +16,13 @@ sudo openssl req -new -key /opt/bitnami/apache2/conf/server.key -out /opt/bitnam
 sudo openssl x509 -in /opt/bitnami/apache2/conf/cert.csr -out /opt/bitnami/apache2/conf/server.crt -req -signkey /opt/bitnami/apache2/conf/server.key -days 365
 ```
 
+### Increase Max File Size and Upload Limits
+- upload_max_filesize = 1536M
+- post_max_size = 1536M
+- memory_limit = 680M
+- max_execution_time = 300
+
+
 ## Remove Bitnami Banner 
 > Lower Right Page Peel Banner Removal CLI code
 To remove the banner link to the Bitnami Info page, follow these steps:
