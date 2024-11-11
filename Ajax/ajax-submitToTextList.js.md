@@ -1,3 +1,4 @@
+<scritp>
 $(document).ready(function() {
   $("#update-list-button").click(function() {
     // Replace these with your actual values
@@ -28,3 +29,4 @@ $(document).ready(function() {
     });
   });
 });
+</script>
