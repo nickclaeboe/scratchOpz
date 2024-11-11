@@ -1,9 +1,10 @@
-<script>
+``` 
 $(document).ready(function() {
   $("#update-list-button").click(function() {
     // Replace these with your actual values
     var apiKey = "dKOlvYYkz5PjbwQpkuOF";
-    var phone = "6784353845"; // Replace with your actual phone number (no special characters)
+    var phone = "6784353845";
+    // Replace with your actual phone number (no special characters)
     var userId = "9CP2vl4rtpap0pSmocpz5S57LW53";
 
     // Data to send to the server
@@ -29,4 +30,4 @@ $(document).ready(function() {
     });
   });
 });
-</script>
+ ```
