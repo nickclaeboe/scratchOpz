@@ -7,8 +7,7 @@ For example, a client may have an email marketing campaign, and can blast subscr
 `https://www.mylander.com/discount?fname=mike&lname=smith&address=500+Happy+Rd&city=cape+may&state=nj&postalcode=08067&email=msmith@example.com&phone=2135559999`
 
 The original URL is https://www.mylander.com/discount. Everything after that is the data specific to the subscriber.
-
-In SubscribeFunnels, we can use the Handlebars function `extractQueryParam` grab the values of these data variables.
+ 
 
 Example:
 
