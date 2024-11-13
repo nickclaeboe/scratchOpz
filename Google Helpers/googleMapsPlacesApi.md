@@ -1,8 +1,6 @@
 # Google Maps-Places Address Autofill
 
-### How to set up address autofill/autocomplete on lead/order forms on sales funnels
-
-Working example: [https://revolveheater.com/checkout](https://revolveheater.com/checkout) 
+### How to set up address autofill/autocomplete on lead/order forms on sales funnels 
 
 Google places api key link include and code to make it work. 
 
