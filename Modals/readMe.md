@@ -2,4 +2,4 @@
 
 Text Collect
 
-(Example)[https://districtatlanta.com]
+[Example](https://districtatlanta.com)
