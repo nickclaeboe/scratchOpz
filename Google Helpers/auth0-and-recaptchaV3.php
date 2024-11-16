@@ -165,6 +165,4 @@ if (!$mail->send()) {
     echo 'Message sent!';
 }
 
-?>
-
-[sauce](https://stackoverflow.com/questions/51507695/google-recaptcha-v3-example-demo/54118106#54118106)
+//https://stackoverflow.com/questions/51507695/google-recaptcha-v3-example-demo/54118106#54118106
