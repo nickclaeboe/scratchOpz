@@ -1,7 +1,8 @@
+```
   <button type="button" class="btn btn-danger noFomo position-fixed start-0 bottom-0 mb-3 ms-3" data-bs-toggle="modal" data-bs-target="#peerModal">
         NO FOMO
     </button>
-
+```
      <?php include('peerPop-modal.php'); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
     <script>
