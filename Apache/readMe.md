@@ -39,3 +39,12 @@ add_header Content-Security-Policy "default-src https:; script-src https: 'unsaf
 add_header Feature-Policy "geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;payment none;";
 ```
 
+## Correctly redirect to https - virtual hosts, bitnami SSL.conf
+
+    RewriteEngine On
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+
+https://stackoverflow.com/questions/1478173/htaccess-redirect-www-to-non-www-with-ssl-https#answer-47890904
